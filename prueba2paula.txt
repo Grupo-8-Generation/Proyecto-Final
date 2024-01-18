@@ -1,9 +1,0 @@
-git init
- git remote add origin https://github.com/Grupo-8-Generation/Proyecto-Final.git
-git pull
- git checkout -b Paula
-git add .
-git commit -m "Prueba rama Paula"
-git push -u origin Paula
-
-
