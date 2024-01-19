@@ -75,12 +75,12 @@
 }
 
 .btn-primary-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: #583b0a !important;
     color: var(--bs-white) !important;
 }
 
 .btn-light-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: #583b0a !important;
     color: var(--bs-white) !important;
 }
 
@@ -220,7 +220,7 @@
 
 
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/cafe_contacto.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,7 +377,7 @@
 
 /*** Appointment  Start ***/
 .appointment {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cafe_contacto.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -494,7 +494,7 @@
 
 /*** Pricing Start ***/
 .pricing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cafe_contacto.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -636,7 +636,7 @@
 
 /*** Contact Start ***/
 .contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cafe_contacto.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
