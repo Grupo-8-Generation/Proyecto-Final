@@ -71,16 +71,16 @@
 
 .btn-light-outline-0 {
     border: 0;
-    color: var(--bs-primary) !important;
+    color: #BA8F44 !important;
 }
 
 .btn-primary-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: var(white) !important;
     color: var(--bs-white) !important;
 }
 
 .btn-light-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background:  #E0DFB1!important;
     color: var(--bs-white) !important;
 }
 
@@ -267,6 +267,11 @@
 
 
 /*** About Start ***/
+/*Image from nosotros*/
+#imagenValores
+{
+    width: 60%;
+}
 /*** Youtube Video start ***/
 .video {
     position: relative;
@@ -545,7 +550,7 @@
 }
 
 .team .team-item .team-text {
-    background: var(--bs-primary);
+    background: #BA8F44;
 }
 
 .team .team-item .team-social {
@@ -589,8 +594,8 @@
     transition: 0.5s;
 }
 
-.team .team-item:hover .team-text {
-    background: var(--bs-secondary);
+.team .team-item:hover .team-text{
+    background: #E0DFB1;
 }
 /*** Team End ***/
 
@@ -673,3 +678,374 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+/**estilos para misión y valores**/
+#mision, #valores
+{
+    width: 550px;
+    margin-left: 50%;
+}
+/**fin estilos para misión y valores**/
+
+/**Estilos para visión**/
+#vision
+{
+    width: 550px;
+}
+/**Fin estilos para visión**/
+
+/**Color de las letras del menú**/
+#link-color
+{
+    color: #E0DFB1;
+}
+
+#link-color:hover
+{
+    color: white;
+}
+/**Fin de color letras del menú**/
+
+/**Color para el drop-down-list **/
+#color-fondo
+{
+    background-color: #BA8F44 !important;
+}
+/**Fin color para el drop-down-list**/
+
+/**Margen texto descripción**/
+#espacio-texto3
+{
+    margin-left: 3px;
+}
+
+#espacio-texto4
+{
+    margin-left: 8px;
+}
+/**Fin margen texto descripción**/
+
+/**Color container**/
+.color-general
+{
+    background-color: #BA8F44;
+}
+/**Fin colo container**/
+
+
+/**Color titulos página nosotros**/
+.color-titulos
+{
+    color: #0A3740;
+}
+/**Fin color titulos página nosotros**/
+
+/**Color inicial titulo nombres de fotos**/
+.text-card
+{
+    color: white;
+}
+
+/**Color efecto titulo nombres de fotos**/
+.team .team-item:hover .text-card{
+    color: #BA8F44;
+}
+/**Fin Color inicial titulo nombres de fotos**/
+
+
+/**Texto que contiene los cargos de cada miembro del equipo**/
+.texto-oculto
+{
+    color: #BA8F44;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
+/**Fin texto que contiene los cargos de cada miembro del equipo**/
+
+
+
+/**Media querys screen**/
+/**Móvil**/
+/**Screen 360px**/
+
+@media screen and (min-width:360px) and (max-width:360px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 0%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: -3px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: -3px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 11px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 17px !important;
+    }
+
+
+
+
+}
+/**Fin screen 360px**/
+
+/**screen 390px**/
+@media screen and (min-width:390px) and (max-width:390px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 0%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: 2px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: 2px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 7px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 12px !important;
+    }
+}
+/**Fin screen 390px**/
+
+
+/**screen 393px**/
+@media screen and (min-width:393px) and (max-width:393px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 0%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: 3px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: 3px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 9px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 14px !important;
+    }
+}
+/**Fin screen 393px**/
+
+
+/**screen 412px**/
+@media screen and (min-width:412px) and (max-width:412px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 0%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: 5px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: 5px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 18px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 23px !important;
+    }
+}
+/**Fin screen 412px**/
+
+/**screen 414px**/
+@media screen and (min-width:414px) and (max-width:414px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 0%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: 5px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: 5px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 20px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 25px !important;
+    }
+}
+/**Fin screen 414px**/
+
+
+/**screen 414px**/
+@media screen and (min-width:414px) and (max-width:414px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 0%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: 5px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: 5px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 20px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 25px !important;
+    }
+}
+/**Fin screen 414px**/
+
+/**Tablet**/
+/**screen 768px**/
+@media screen and (min-width:768px) and (max-width:768px)
+{
+    /**estilos para misión y valores**/
+    #mision, #valores
+    {
+        width: 550px;
+        margin-left: 30%;
+    }
+    /**fin estilos para misión y valores**/
+
+    /**Estilos para visión**/
+    #vision
+    {
+        width: 550px;
+    }
+
+    /**Margen texto descripción**/
+    #espacio-texto1
+    {
+        margin-left: 5px !important;
+    }
+
+    #espacio-texto2
+    {
+        margin-left: 5px !important;
+    }
+    #espacio-texto3
+    {
+        margin-left: 28px !important;
+    }
+
+    #espacio-texto4
+    {
+        margin-left: 33px !important;
+    }
+}
+/**Fin screen 768px**/
+/**Fin media querys screen**/
