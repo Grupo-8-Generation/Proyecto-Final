@@ -1048,3 +1048,82 @@
 }
 /**Fin screen 768px**/
 /**Fin media querys screen**/
+
+/*Estilo para poner en color negro el título de los productos en la sección de galería*/
+.texto-galeria
+{
+    color: black;
+}
+
+/*Clase para que cambie el puntero del mouse una vez este sobre la lupa que pertenece a la imagen de la sección de galería*/
+.puntero
+{
+    cursor: pointer;
+}
+
+/*Tamaño de imagenes para asignar por medio de javascript y dar el tamaño adecuado al modal*/
+.imaganesP
+{
+    width: 150px !important;
+    height: 180px;
+}
+
+/*Caracteristicas del modal que va a mostrar la imagen junto a su descripción*/
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilitar scroll si es necesario */
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.8); /* Color de fondo con opacidad */
+}
+
+/*Es el contenedor de la imagen y del texto en la sección de galerias*/
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* Ancho del contenido */
+    height: 40%;
+}
+
+/*La x que acompaña el modal para cerrarlo y que se vea nuevamente la página*/
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*Efecto que va tener la x una vez se pase el mouse en esta*/
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .body-no-scroll {
+    overflow: hidden;
+    height: 100%;
+} */
+
+/*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
+.contenedor-galeria
+{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+/*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
+.contenedor-textos
+{
+    display: flex;
+    flex-direction: column;
+}
