@@ -4,7 +4,7 @@ import { Producto } from './objetos.js';
 //Crear los objetos para que se puedan llamar en la clase por medio de un array
 let productos = 
     [
-        new Producto ('Cafe Premium 1', 'Esta descripción es para café premium 1', 'img/about-1.jpg', 5, 2000),
+        new Producto ('Cafe Premium 1', 'Esta descripción es para café premium 1', 'img/cafe-1.jpg', 5, 2000),
         new Producto('Cafe Premium 2', 'Esta descripción es para café premium 2', 'img/about-2.jpg', 3, 5000),
         new Producto('Cafe Premium 3', 'Esta descripción  es para café premium 3', 'img/cafe_contacto.jpg',6 ,1500)
     ];
