@@ -775,6 +775,10 @@
 
 @media screen and (min-width:360px) and (max-width:360px)
 {
+    .puntero
+    {
+        cursor: pointer;
+    }
     /**estilos para misión y valores**/
     #mision, #valores
     {
@@ -816,7 +820,7 @@
         margin: 30% auto !important; /* 15% desde la parte superior y centrado */
         padding: 20px;
         border: 1px solid #241e1e;
-        width: 235px !important; /* Ancho del contenido */
+        width: 350px !important; /* Ancho del contenido */
         height: auto;
         
     }
@@ -833,7 +837,7 @@
     /*Efecto que va tener la x una vez se pase el mouse en esta*/
     .cerrar:hover,
     .cerrar:focus {
-        color: black;
+        color: black !important;
         text-decoration: none;
         cursor: pointer;
     }
