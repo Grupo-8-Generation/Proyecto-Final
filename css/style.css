@@ -4,13 +4,14 @@
     visibility: hidden;
     transition: opacity .8s ease-out, visibility 0s linear .5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 /*** Spinner End ***/
 
 .back-to-top {
@@ -79,7 +80,7 @@
 }
 
 .btn-light-outline-0:hover {
-    background:  #E0DFB1!important;
+    background: #E0DFB1 !important;
     color: var(--bs-white) !important;
 }
 
@@ -155,13 +156,13 @@
 #searchModal .modal-content {
     background: rgba(250, 250, 250, .6);
 }
+
 /*** Navbar End ***/
 
 /*** Carousel Start ***/
 .carousel-item {
     position: relative;
     min-height: 100vh
-    
 }
 
 .carousel-item img {
@@ -215,6 +216,7 @@
     border-right: 15px solid var(--bs-primary);
     border-left: 15px solid var(--bs-primary);
 }
+
 /*** Carousel End ***/
 
 
@@ -261,20 +263,21 @@
 .services .services-item .services-img img:hover {
     transform: scale(1.3);
 }
+
 /*** Services End ***/
 
 
 
 /*** About Start ***/
 /*Image from nosotros*/
-#imagenValores
-{
+#imagenValores {
     width: 60%;
 }
+
 /*** Youtube Video start ***/
 .video {
     position: relative;
-    padding-right: 70px; 
+    padding-right: 70px;
     padding-bottom: 70px;
     border-radius: 10px;
 }
@@ -375,6 +378,7 @@
     background: #000000;
     opacity: 1;
 }
+
 /*** Youtube Video End ***/
 /*** About End ***/
 
@@ -398,6 +402,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
 /*** Appointment End ***/
 
 /*** Counter Start ***/
@@ -419,11 +424,11 @@
 
 .counter-section .counter-item .counter-content .svg-img {
     position: absolute;
-    bottom: 0; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    margin-bottom: -50px; 
-    margin-left: -45px; 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -50px;
+    margin-left: -45px;
     transform: rotate(180deg);
 }
 
@@ -436,6 +441,7 @@
     justify-content: center;
     background: var(--bs-primary);
 }
+
 /*** Counter End ***/
 
 
@@ -443,6 +449,7 @@
 .gallery .tab-class .nav-item {
     padding: 0 0 20px 0;
 }
+
 .gallery .tab-class .nav-item a.active {
     background: var(--bs-primary) !important;
 }
@@ -486,18 +493,20 @@
     transition: 0.5s;
     opacity: 0;
     z-index: 2;
-    
+
 }
+
 .img-fluid {
     width: 400px;
-	height: 400px;
-	object-fit: cover;
+    height: 400px;
+    object-fit: cover;
 }
 
 .gallery .gallery-img:hover .gallery-overlay,
 .gallery .gallery-img:hover .search-icon {
     opacity: 1;
 }
+
 /*** Events End ***/
 
 
@@ -544,6 +553,7 @@
 .pricing .owl-carousel.pricing-carousel .owl-nav .owl-next:hover {
     color: var(--bs-primary);
 }
+
 /*** Pricing End ***/
 
 /*** Team Start ***/
@@ -559,14 +569,14 @@
 
 .team .team-item .team-social {
     position: absolute;
-    top: -180px; 
-    left: 20px; 
+    top: -180px;
+    left: 20px;
     opacity: 0;
     transition: 0.5s;
 }
 
 .team .team-item:hover .team-social {
-    top: 20px; 
+    top: 20px;
     left: 20px;
     opacity: 1;
 }
@@ -598,9 +608,10 @@
     transition: 0.5s;
 }
 
-.team .team-item:hover .team-text{
+.team .team-item:hover .team-text {
     background: #E0DFB1;
 }
+
 /*** Team End ***/
 
 /*** testimonial Start ***/
@@ -641,6 +652,7 @@
 .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--bs-primary);
 }
+
 /*** testimonial end ***/
 
 /*** Contact Start ***/
@@ -654,6 +666,7 @@
 .contact .contact-form {
     background: rgba(255, 255, 255, 0.6);
 }
+
 /*** Contact End ***/
 
 /*** footer start ***/
@@ -681,90 +694,90 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
 }
+
 /*** copyright end ***/
 
 /**estilos para misión y valores**/
-#mision, #valores
-{
+#mision,
+#valores {
     width: 550px;
     margin-left: 50%;
 }
+
 /**fin estilos para misión y valores**/
 
 /**Estilos para visión**/
-#vision
-{
+#vision {
     width: 550px;
 }
+
 /**Fin estilos para visión**/
 
 /**Color de las letras del menú**/
-#link-color
-{
+#link-color {
     color: #E0DFB1;
 }
 
-#link-color:hover
-{
+#link-color:hover {
     color: white;
 }
+
 /**Fin de color letras del menú**/
 
 /**Color para el drop-down-list **/
-#color-fondo
-{
+#color-fondo {
     background-color: #BA8F44 !important;
 }
+
 /**Fin color para el drop-down-list**/
 
 /**Margen texto descripción**/
-#espacio-texto3
-{
+#espacio-texto3 {
     margin-left: 3px;
 }
 
-#espacio-texto4
-{
+#espacio-texto4 {
     margin-left: 8px;
 }
+
 /**Fin margen texto descripción**/
 
 /**Color container**/
-.color-general
-{
+.color-general {
     background-color: #BA8F44;
 }
+
 /**Fin colo container**/
 
 
 /**Color titulos página nosotros**/
-.color-titulos
-{
+.color-titulos {
     color: #0A3740;
 }
+
 /**Fin color titulos página nosotros**/
 
 /**Color inicial titulo nombres de fotos**/
-.text-card
-{
+.text-card {
     color: white;
 }
 
 /**Color efecto titulo nombres de fotos**/
-.team .team-item:hover .text-card{
+.team .team-item:hover .text-card {
     color: #BA8F44;
 }
+
 /**Fin Color inicial titulo nombres de fotos**/
 
 
 /**Texto que contiene los cargos de cada miembro del equipo**/
-.texto-oculto
-{
+.texto-oculto {
     color: #BA8F44;
     position: absolute;
     bottom: 0;
     visibility: hidden;
 }
+
 /**Fin texto que contiene los cargos de cada miembro del equipo**/
 
 
@@ -773,56 +786,54 @@
 /**Móvil**/
 /**Screen 360px**/
 
-@media screen and (min-width:360px) and (max-width:360px)
-{
-    .puntero
-    {
+@media screen and (min-width:360px) and (max-width:360px) {
+    .puntero {
         cursor: pointer;
     }
+
     /**estilos para misión y valores**/
-    #mision, #valores
-    {
+    #mision,
+    #valores {
         width: 550px;
         margin-left: 0%;
     }
+
     /**fin estilos para misión y valores**/
 
     /**Estilos para visión**/
-    #vision
-    {
+    #vision {
         width: 550px;
     }
 
     /**Margen texto descripción**/
-    #espacio-texto1
-    {
+    #espacio-texto1 {
         margin-left: -3px !important;
     }
 
-    #espacio-texto2
-    {
+    #espacio-texto2 {
         margin-left: -3px !important;
     }
-    #espacio-texto3
-    {
+
+    #espacio-texto3 {
         margin-left: 11px !important;
     }
 
-    #espacio-texto4
-    {
+    #espacio-texto4 {
         margin-left: 17px !important;
     }
 
-     /*Modal*/
+    /*Modal*/
     /*Es el contenedor de la imagen y del texto en la sección de galerias #CCB48A*/
     .modal-contenido {
         background-color: #CCB48A;
-        margin: 30% auto !important; /* 15% desde la parte superior y centrado */
+        margin: 30% auto !important;
+        /* 15% desde la parte superior y centrado */
         padding: 20px;
         border: 1px solid #241e1e;
-        width: 350px !important; /* Ancho del contenido */
+        width: 350px !important;
+        /* Ancho del contenido */
         height: auto;
-        
+
     }
 
 
@@ -848,57 +859,85 @@
     } */
 
     /*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
-    .contenedor-galeria
-    {
+    .contenedor-galeria {
         display: flex;
         flex-direction: column !important;
         gap: 20px;
-        
+
     }
 
     /*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
-    .contenedor-textos
-    {
+    .contenedor-textos {
         display: flex;
         flex-direction: column;
     }
+
+    /*Forumalario de registro y login inicio*/
+    .container-forms {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+    }
+
+    #myDIV {
+        width: 75% !important;
+        margin-left: 50px;
+    }
+
+    #formularioRegistro {
+        width: 75% !important;
+        margin-left: 50px !important;
+    }
+
+    .botones-login {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-registrarse {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 60px !important;
+    }
+
+    /*Formulario de registro y login Fin*/
 }
+
 /**Fin screen 360px**/
 
 /**screen 390px**/
-@media screen and (min-width:390px) and (max-width:390px)
-{
+@media screen and (min-width:390px) and (max-width:390px) {
+
     /**estilos para misión y valores**/
-    #mision, #valores
-    {
+    #mision,
+    #valores {
         width: 550px;
         margin-left: 0%;
     }
+
     /**fin estilos para misión y valores**/
 
     /**Estilos para visión**/
-    #vision
-    {
+    #vision {
         width: 550px;
     }
 
     /**Margen texto descripción**/
-    #espacio-texto1
-    {
+    #espacio-texto1 {
         margin-left: 2px !important;
     }
 
-    #espacio-texto2
-    {
+    #espacio-texto2 {
         margin-left: 2px !important;
     }
-    #espacio-texto3
-    {
+
+    #espacio-texto3 {
         margin-left: 7px !important;
     }
 
-    #espacio-texto4
-    {
+    #espacio-texto4 {
         margin-left: 12px !important;
     }
 
@@ -906,12 +945,14 @@
     /*Es el contenedor de la imagen y del texto en la sección de galerias #CCB48A*/
     .modal-contenido {
         background-color: #CCB48A;
-        margin: 30% auto !important; /* 15% desde la parte superior y centrado */
+        margin: 30% auto !important;
+        /* 15% desde la parte superior y centrado */
         padding: 20px;
         border: 1px solid #241e1e;
-        width: 250px !important; /* Ancho del contenido */
+        width: 250px !important;
+        /* Ancho del contenido */
         height: auto;
-        
+
     }
 
 
@@ -931,77 +972,102 @@
         cursor: pointer;
     }
 
-    /* .body-no-scroll {
-        overflow: hidden;
-        height: 100%;
-    } */
-
     /*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
-    .contenedor-galeria
-    {
+    .contenedor-galeria {
         display: flex;
         flex-direction: column !important;
         gap: 20px;
-        
+
     }
 
     /*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
-    .contenedor-textos
-    {
+    .contenedor-textos {
         display: flex;
         flex-direction: column;
     }
+
+    /*Forumalario de registro y login inicio*/
+    .container-forms {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+    }
+
+    #myDIV {
+        width: 75% !important;
+        margin-left: 50px;
+    }
+
+    #formularioRegistro {
+        width: 75% !important;
+        margin-left: 50px !important;
+    }
+
+    .botones-login {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-registrarse {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 80px !important;
+    }
+
+    /*Formulario de registro y login Fin*/
 }
+
 /**Fin screen 390px**/
 
 
 /**screen 393px**/
-@media screen and (min-width:393px) and (max-width:393px)
-{
+@media screen and (min-width:393px) and (max-width:393px) {
+
     /**estilos para misión y valores**/
-    #mision, #valores
-    {
+    #mision,
+    #valores {
         width: 550px;
         margin-left: 0%;
     }
+
     /**fin estilos para misión y valores**/
 
     /**Estilos para visión**/
-    #vision
-    {
+    #vision {
         width: 550px;
     }
 
     /**Margen texto descripción**/
-    #espacio-texto1
-    {
+    #espacio-texto1 {
         margin-left: 3px !important;
     }
 
-    #espacio-texto2
-    {
+    #espacio-texto2 {
         margin-left: 3px !important;
     }
-    #espacio-texto3
-    {
+
+    #espacio-texto3 {
         margin-left: 9px !important;
     }
 
-    #espacio-texto4
-    {
+    #espacio-texto4 {
         margin-left: 14px !important;
     }
 
-     /*Modal*/
+    /*Modal*/
     /*Es el contenedor de la imagen y del texto en la sección de galerias #CCB48A*/
     .modal-contenido {
         background-color: #CCB48A;
-        margin: 30% auto !important; /* 15% desde la parte superior y centrado */
+        margin: 30% auto !important;
+        /* 15% desde la parte superior y centrado */
         padding: 20px;
         border: 1px solid #241e1e;
-        width: 245px !important; /* Ancho del contenido */
+        width: 245px !important;
+        /* Ancho del contenido */
         height: auto;
-        
+
     }
 
 
@@ -1027,71 +1093,101 @@
     } */
 
     /*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
-    .contenedor-galeria
-    {
+    .contenedor-galeria {
         display: flex;
         flex-direction: column !important;
         gap: 20px;
-        
+
     }
 
     /*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
-    .contenedor-textos
-    {
+    .contenedor-textos {
         display: flex;
         flex-direction: column;
     }
+
+    /*Forumalario de registro y login inicio*/
+    .container-forms {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+    }
+
+    #myDIV {
+        width: 75% !important;
+        margin-left: 50px;
+    }
+
+    #formularioRegistro {
+        width: 75% !important;
+        margin-left: 50px !important;
+    }
+
+    .botones-login {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-registrarse {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 80px !important;
+    }
+
+    /*Formulario de registro y login Fin*/
 }
+
 /**Fin screen 393px**/
 
 
 /**screen 412px**/
-@media screen and (min-width:412px) and (max-width:412px)
-{
+@media screen and (min-width:412px) and (max-width:412px) {
+
     /**estilos para misión y valores**/
-    #mision, #valores
-    {
+    #mision,
+    #valores {
         width: 550px;
         margin-left: 0%;
     }
+
     /**fin estilos para misión y valores**/
 
     /**Estilos para visión**/
-    #vision
-    {
+    #vision {
         width: 550px;
     }
 
     /**Margen texto descripción**/
-    #espacio-texto1
-    {
+    #espacio-texto1 {
         margin-left: 5px !important;
     }
 
-    #espacio-texto2
-    {
+    #espacio-texto2 {
         margin-left: 5px !important;
     }
-    #espacio-texto3
-    {
+
+    #espacio-texto3 {
         margin-left: 18px !important;
     }
 
-    #espacio-texto4
-    {
+    #espacio-texto4 {
         margin-left: 23px !important;
     }
 
-     /*Modal*/
+    /*Modal*/
     /*Es el contenedor de la imagen y del texto en la sección de galerias #CCB48A*/
     .modal-contenido {
         background-color: #CCB48A;
-        margin: 30% auto !important; /* 15% desde la parte superior y centrado */
+        margin: 30% auto !important;
+        /* 15% desde la parte superior y centrado */
         padding: 20px;
         border: 1px solid #241e1e;
-        width: 245px !important; /* Ancho del contenido */
+        width: 245px !important;
+        /* Ancho del contenido */
         height: auto;
-        
+
     }
 
 
@@ -1117,70 +1213,100 @@
     } */
 
     /*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
-    .contenedor-galeria
-    {
+    .contenedor-galeria {
         display: flex;
         flex-direction: column !important;
         gap: 20px;
-        
+
     }
 
     /*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
-    .contenedor-textos
-    {
+    .contenedor-textos {
         display: flex;
         flex-direction: column;
     }
+
+    /*Forumalario de registro y login inicio*/
+    .container-forms {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+    }
+
+    #myDIV {
+        width: 75% !important;
+        margin-left: 50px;
+    }
+
+    #formularioRegistro {
+        width: 75% !important;
+        margin-left: 50px !important;
+    }
+
+    .botones-login {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-registrarse {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 80px !important;
+    }
+
+    /*Formulario de registro y login Fin*/
 }
+
 /**Fin screen 412px**/
 
 /**screen 414px**/
-@media screen and (min-width:414px) and (max-width:414px)
-{
+@media screen and (min-width:414px) and (max-width:414px) {
+
     /**estilos para misión y valores**/
-    #mision, #valores
-    {
+    #mision,
+    #valores {
         width: 550px;
         margin-left: 0%;
     }
+
     /**fin estilos para misión y valores**/
 
     /**Estilos para visión**/
-    #vision
-    {
+    #vision {
         width: 550px;
     }
 
     /**Margen texto descripción**/
-    #espacio-texto1
-    {
+    #espacio-texto1 {
         margin-left: 5px !important;
     }
 
-    #espacio-texto2
-    {
+    #espacio-texto2 {
         margin-left: 5px !important;
     }
-    #espacio-texto3
-    {
+
+    #espacio-texto3 {
         margin-left: 20px !important;
     }
 
-    #espacio-texto4
-    {
+    #espacio-texto4 {
         margin-left: 25px !important;
     }
 
-     /*Modal*/
+    /*Modal*/
     /*Es el contenedor de la imagen y del texto en la sección de galerias #CCB48A*/
     .modal-contenido {
         background-color: #CCB48A;
-        margin: 30% auto !important; /* 15% desde la parte superior y centrado */
+        margin: 30% auto !important;
+        /* 15% desde la parte superior y centrado */
         padding: 20px;
         border: 1px solid #241e1e;
-        width: 245px !important; /* Ancho del contenido */
+        width: 245px !important;
+        /* Ancho del contenido */
         height: auto;
-        
+
     }
 
 
@@ -1206,107 +1332,149 @@
     } */
 
     /*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
-    .contenedor-galeria
-    {
+    .contenedor-galeria {
         display: flex;
         flex-direction: column !important;
         gap: 20px;
-        
+
     }
 
     /*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
-    .contenedor-textos
-    {
+    .contenedor-textos {
         display: flex;
         flex-direction: column;
     }
+
+    /*Forumalario de registro y login inicio*/
+    .container-forms {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+    }
+
+    #myDIV {
+        width: 75% !important;
+        margin-left: 50px;
+    }
+
+    #formularioRegistro {
+        width: 75% !important;
+        margin-left: 50px !important;
+    }
+
+    .botones-login {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-registrarse {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 80px !important;
+    }
+
+    /*Formulario de registro y login Fin*/
 }
+
 /**Fin screen 414px**/
 
 /**Tablet**/
 /**screen 768px**/
-@media screen and (min-width:768px) and (max-width:768px)
-{
+@media screen and (min-width:768px) and (max-width:768px) {
+
     /**estilos para misión y valores**/
-    #mision, #valores
-    {
+    #mision,
+    #valores {
         width: 550px;
         margin-left: 30%;
     }
+
     /**fin estilos para misión y valores**/
 
     /**Estilos para visión**/
-    #vision
-    {
+    #vision {
         width: 550px;
     }
 
     /**Margen texto descripción**/
-    #espacio-texto1
-    {
+    #espacio-texto1 {
         margin-left: 5px !important;
     }
 
-    #espacio-texto2
-    {
+    #espacio-texto2 {
         margin-left: 5px !important;
     }
-    #espacio-texto3
-    {
+
+    #espacio-texto3 {
         margin-left: 28px !important;
     }
 
-    #espacio-texto4
-    {
+    #espacio-texto4 {
         margin-left: 33px !important;
     }
+
+    .btn-registrarse {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 120px !important;
+    }
 }
+
 /**Fin screen 768px**/
 /**Fin media querys screen**/
 
 /*Estilo para poner en color negro el título de los productos en la sección de galería*/
-.texto-galeria
-{
+.texto-galeria {
     color: black;
 }
 
 /*Clase para que cambie el puntero del mouse una vez este sobre la lupa que pertenece a la imagen de la sección de galería*/
-.puntero
-{
+.puntero {
     cursor: pointer;
     display: block !important;
 }
 
 /*Tamaño de imagenes para asignar por medio de javascript y dar el tamaño adecuado al modal*/
-.imaganesP
-{
+.imaganesP {
     width: 150px !important;
     height: 180px;
 }
 
 /*Caracteristicas del modal que va a mostrar la imagen junto a su descripción*/
 .modal {
-    display: none; /* Oculto por defecto */
-    position: fixed; /* Fijo en la pantalla */
-    z-index: 1; /* Encima de todo */
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    /* Fijo en la pantalla */
+    z-index: 1;
+    /* Encima de todo */
     left: 0;
     top: 0;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    overflow: auto; /* Habilitar scroll si es necesario */
-    background-color: rgb(0,0,0); /* Color de fondo */
-    background-color: rgba(0,0,0,0.8); /* Color de fondo con opacidad */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    overflow: auto;
+    /* Habilitar scroll si es necesario */
+    background-color: rgb(0, 0, 0);
+    /* Color de fondo */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Color de fondo con opacidad */
 }
 
 /*Es el contenedor de la imagen y del texto en la sección de galerias*/
 .modal-contenido {
     background-color: #CCB48A;
-    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    margin: 15% auto;
+    /* 15% desde la parte superior y centrado */
     padding: 20px;
     border: 1px solid #241e1e;
-    width: 500px; /* Ancho del contenido */
+    width: 500px;
+    /* Ancho del contenido */
     height: auto;
-    
+
 }
 
 
@@ -1332,37 +1500,47 @@
 } */
 
 /*Contenedor principal para poder realizar que las imagenes y el texto de los modales que queden en filas*/
-.contenedor-galeria
-{
+.contenedor-galeria {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    
+
 }
 
 /*ContenedorB que tiene los textos de la imagen del modal, para que se vean en columnas*/
-.contenedor-textos
-{
+.contenedor-textos {
     display: flex;
     flex-direction: column;
 }
 
-/*Forumalario de registro inicio*/
-.container-forms
-{
+/*Forumalario de registro y login inicio*/
+.container-forms {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 #myDIV {
-    /* padding: 5px 5px 0px 800px; */
     width: 50%;
     margin-right: 25px;
 }
 
 #formularioRegistro {
-    /* padding: 0px 400px 0px 100px;
-    margin-top: -200px ; */
     width: 50%;
     margin-left: 25px;
 }
+
+.botones-login {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-registrarse {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 220px;
+}
+
+/*Formulario de registro y login Fin*/
