@@ -113,6 +113,25 @@
 
     <!--Inicio contenedor formularios-->
     <div class="container-forms">
+        <!--Inicio de formulario de inicio de sesión -->
+        <div class="container" id="myDIV">
+            <h2> Ingresar </h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" class="form-control" id="contrasena" required>
+                </div>
+                <div class="botones-login">
+                    <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
+                    <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        <!--Fin de formulario-->
 
         <!--formulario de registro-->
         <div class="container" id="formularioRegistro">
@@ -134,31 +153,14 @@
                     <label for="password">Contraseña:</label>
                     <input type="password" class="form-control" id="password" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <div class="btn-registrarse">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
             </form>
         </div>
         <!--Fin de formulario de registro-->
-
-        <!--Inicio de formulario de inicio de sesión -->
-        <div class="container" id="myDIV">
-            <h2> Ingresar </h2>
-            <form>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" class="form-control" id="contrasena" required>
-                </div>
-                <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
-                <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
-            </form>
-        </div>
-        <!--Fin de formulario-->
     </div>
     <!--Fin contenedor formularios-->
-
 
     <!-- Búsqueda Modal Inicio -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -232,7 +234,8 @@
                             <h1 class="display-1 text-capitalize text-dark">Nuevos Lanzamientos</h1>
                             <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Sumérgete en la frescura de la novedad y
                                 descubre una nueva dimensión de disfrute del café con nuestras emocionantes adiciones.
-                                <br> ¡No te pierdas lo último en Coffee Wehyah! ☕🌱</p>
+                                <br> ¡No te pierdas lo último en Coffee Wehyah! ☕🌱
+                            </p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4"
                                     href="#">Tienda</a>
