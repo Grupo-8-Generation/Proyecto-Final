@@ -826,7 +826,7 @@
     .cerrar {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 28px !important;
         font-weight: bold;
     }
 
@@ -835,7 +835,7 @@
     .cerrar:focus {
         color: black;
         text-decoration: none;
-        cursor: pointer;
+        cursor: pointer !important;
     }
 
     /* .body-no-scroll {
