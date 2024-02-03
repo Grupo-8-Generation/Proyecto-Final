@@ -5,7 +5,7 @@ import { Producto } from './objetos.js';
 let productos = 
     [
         //Todos los productos(?)
-        new Producto('Café Mesa de los Santos', 'Granos de café de alta calidad, tipo arabica, listos para moler y preparar la taza perfecta de café en casa. Disfruta de la frescura y el sabor auténtico.', '/img/Productos/Santos.png', 20, $25000),
+        new Producto('Café Mesa de los Santos', 'Granos de café de alta calidad, tipo arabica, listos para moler y preparar la taza perfecta de café en casa. Disfruta de la frescura y el sabor auténtico.', './img/Productos/Santos.png', 20, $25000),
         new Producto('Mezcla Intensa "Q.Coffee"', 'Sumérgete en la intensidad de nuestro café. Esta mezcla única ofrece un perfil de sabor audaz y fuerte, con notas de cacao y un toque ahumado. Ideal para aquellos que buscan una experiencia de café potente y llena de carácter.', '/img/Productos/premium.png', 12, $30000),
     
         //Cafés
