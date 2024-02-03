@@ -93,35 +93,72 @@
                             </svg>
                         </div>
                         <div>
-                            <a href="sesionPerfil.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Iniciar sesión</a>
+                            <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
-    <!-- Navbar Fin --> 
+    <!-- Navbar Fin -->
+    <!--Inicio de formulario de inicio de sesión -->
 
+    <script src="js/formularioPerfil.js"></script>
+    <section>
+    <div class="container" id="myDIV">
+        <h1> Ingresar </h1>
+        <form>
+          <!--<div class="form-group">
+            <label for="nombreCompleto">Nombre completo </label>
+            <input type="text" class="form-control" id="nombreCompleto" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Número de teléfono </label>
+            <input type="tel" class="form-control" id="telefono" required>
+          </div>-->
+          <div class="form-group">
+            <label for="email">Email </label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" required>
+          </div>
+          <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
+          <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button> 
+        </form>
+      </div>
+    </section>
+    <!--Fin de formulario-->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="bi bi-cart2" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
+    <!--formulario de registro-->
+    <section id="formularioRegistro">
+        
+        <div class="container" id="formularioRegistro"> 
+            <h2>Registro de Usuario</h2> 
+            <form id="registrationForm"> 
+            <div class="form-group"> 
+                <label for="fullName">Nombre completo:</label> 
+                <input type="text" class="form-control" id="fullName" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="phoneNumber">Número de teléfono:</label> 
+                <input type="tel" class="form-control" id="phoneNumber" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="email">Email:</label> 
+                <input type="email" class="form-control" id="email" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="password">Contraseña:</label> 
+                <input type="password" class="form-control" id="password" required> 
+            </div> 
+            <button type="submit" class="btn btn-primary">Registrarse</button> </form> </div> 
+        </form>
+     </div>
+    </section>
 
+    <!--Fin de formulario de registro-->
 
 
         <!-- Header Start -->
