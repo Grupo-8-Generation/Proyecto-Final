@@ -1347,12 +1347,22 @@
     flex-direction: column;
 }
 
+/*Forumalario de registro inicio*/
+.container-forms
+{
+    display: flex;
+    flex-direction: row;
+}
 
 #myDIV {
-    padding: 5px 5px 0px 800px;
+    /* padding: 5px 5px 0px 800px; */
+    width: 50%;
+    margin-right: 25px;
 }
 
 #formularioRegistro {
-    padding: 0px 400px 0px 100px;
-    margin-top: -200px ;
+    /* padding: 0px 400px 0px 100px;
+    margin-top: -200px ; */
+    width: 50%;
+    margin-left: 25px;
 }
