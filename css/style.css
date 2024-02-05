@@ -1529,11 +1529,13 @@
 #myDIV {
     width: 50%;
     margin-right: 25px;
+    display: none;
 }
 
 #formularioRegistro {
     width: 50%;
     margin-left: 25px;
+    display: none;
 }
 
 .botones-login {
