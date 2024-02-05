@@ -1,58 +1,27 @@
-document.getElementById('registroForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    if (validarFormulario()) {
-      const usuario = {
-        nombreCompleto: document.getElementById('nombreCompleto').value,
-        telefono: document.getElementById('telefono').value,
-        email: document.getElementById('email').value,
-        contrasena: document.getElementById('contrasena').value
-      };
-      console.log(usuario);
-      // Aquí podrías enviar el objeto JSON a tu servidor para procesarlo
-    }
-  });
+function validateForm() {
+  var email = document.getElementById('email-1').value;
+  var password = document.getElementById('password-1').value;
 
-  function validarFormulario() {
-    const nombreCompleto = document.getElementById('nombreCompleto').value;
-    const telefono = document.getElementById('telefono').value;
-    const email = document.getElementById('email').value;
-    const contrasena = document.getElementById('contrasena').value;
-
-    if (!contrasenaCoincide(contrasena)) {
-      mostrarError('Las contraseñas no coinciden');
-      return false;
-    }
-    if (!esEmailValido(email)) {
-      mostrarError('El correo electrónico no es válido');
-      return false;
-    }
-    if (!esTelefonoValido(telefono)) {
-      mostrarError('El número de teléfono no es válido');
-      return false;
-    }
-    return true;
+  // Validar el correo electrónico
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Por favor, introduce un correo electrónico válido');
+    return false;
   }
 
-  function contrasenaCoincide(contrasena) {
-    // Aquí podrías implementar la lógica para verificar que las contraseñas coinciden
-    return true; // Por ahora siempre devuelve true
+  // Validar la contraseña
+  if (password.length < 6) {
+    alert('La contraseña debe tener al menos 6 caracteres');
+    return false;
   }
 
-  function esEmailValido(email) {
-    // Aquí podrías implementar la lógica para verificar que el email es válido
-    return true; // Por ahora siempre devuelve true
-  }
+  // Si el correo y la contraseña son válidos, se puede proceder con el inicio de sesión
+  // Aquí puedes agregar tu lógica para enviar los datos a un servidor o realizar otras acciones
+  alert('Inicio de sesión exitoso');
+  return true;
+}
 
-  function esTelefonoValido(telefono) {
-    // Aquí podrías implementar la lógica para verificar que el teléfono es válido
-    return true; // Por ahora siempre devuelve true
-  }
-
-  function mostrarError(mensaje) {
-    alert(mensaje);
-  }
-
-  //Mostrar y esconder sección de formulario
+  //Mostrar y esconder sección de formulario de iniciar sesión 
 
   function myFunction() {
     var x = document.getElementById("myDIV");
@@ -63,18 +32,20 @@ document.getElementById('registroForm').addEventListener('submit', function(even
     }
 }
 
-//formulario de registro
+
+
+//Formulario de registrarse.
 document.getElementById('registrationForm').addEventListener('submit', function(event) { 
     event.preventDefault(); 
     var fullName = document.getElementById('fullName').value; 
     var phoneNumber = document.getElementById('phoneNumber').value; 
-    var email = document.getElementById('email').value; 
-    var password = document.getElementById('password').value; 
+    var email = document.getElementById('email-2').value; 
+    var password = document.getElementById('password-2').value; 
     // Validar que la contraseña coincida 
-    if (password.length < 8) { alert('La contraseña debe tener al menos 8 caracteres'); 
+    if (password.length < 6) { alert('La contraseña debe tener al menos 6 caracteres'); 
     return; } 
     // Validar campos no válidos 
-    if (fullName === '' || phoneNumber === '' || email === '' || password === '') 
+    if (fullName === '' || phoneNumber === '' || email-2 === '' || password-2 === '') 
     { alert('Todos los campos son obligatorios'); 
     return; } 
     // Validar correo electrónico 
@@ -99,3 +70,4 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         x.style.display = "none";
     }
 }
+

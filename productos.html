@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -8,27 +8,27 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Iconos Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Librería Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Plantilla Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -40,6 +40,7 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+
 
     <!-- Navbar Inicio  -->
     <div class="container-fluid sticky-top px-0">
@@ -96,14 +97,11 @@
                             </div>
                             <a href="contacto.html" class="nav-item nav-link">Contacto</a>
                         </div>
-                        <div class="containerCarro">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                                class="bi bi-cart2 icono-grande" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                            </svg>
-                        </div>
-                        <div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <button
+                                class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square"
+                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                    class="fas fa-search"></i></button>
                             <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
                         </div>
                     </div>
@@ -112,28 +110,28 @@
         </div>
     </div>
     <!-- Navbar Fin -->
-    <!--Inicio de formulario de inicio de sesión -->
 
     <!--Inicio contenedor formularios-->
-    <div class="container-forms">
+    <div class="container-forms" >
         <!--Inicio de formulario de inicio de sesión -->
         <div class="container" id="myDIV">
-            <h2> Ingresar </h2>
-            <form>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" class="form-control" id="contrasena" required>
-                </div>
-                <div class="botones-login">
+            <h2>Ingresar</h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control"  type="email" id="email-1" name="email" required>
+              </div>
+              <div class="form-group">
+                <label  for="password">Contraseña</label>
+                <input class="form-control" type="password" id="password-1" name="contrasena" required>
+              </div>
+               <div class="botones-login">
                     <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
                     <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
                 </div>
             </form>
         </div>
+
         <!--Fin de formulario-->
 
         <!--formulario de registro-->
@@ -149,12 +147,12 @@
                     <input type="tel" class="form-control" id="phoneNumber" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <label for="email-2">Email:</label>
+                    <input type="email" class="form-control" id="email-2" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña:</label>
-                    <input type="password" class="form-control" id="password" required>
+                    <input type="password" class="form-control" id="password-2" required>
                 </div>
                 <div class="btn-registrarse">
                     <button type="submit" class="btn btn-primary">Registrarse</button>

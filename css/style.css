@@ -877,16 +877,23 @@
         display: flex;
         flex-direction: column !important;
         align-content: center;
+        
+        
     }
 
     #myDIV {
         width: 75% !important;
         margin-left: 50px;
+        display: none;
+        
+                
     }
 
     #formularioRegistro {
         width: 75% !important;
         margin-left: 50px !important;
+        visibility: none;
+
     }
 
     .botones-login {
