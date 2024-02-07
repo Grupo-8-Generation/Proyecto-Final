@@ -25,7 +25,7 @@ function validateForm() {
 
   function myFunction() {
     var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
+    if (x.style.display === "" || x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
@@ -49,22 +49,35 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     { alert('Todos los campos son obligatorios'); 
     return; } 
     // Validar correo electrónico 
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; if (!emailRegex.test(email)) 
-    { alert('El correo electrónico no es válido'); 
-    return; } 
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    if (!emailRegex.test(email)) 
+    {
+       alert('El correo electrónico no es válido'); 
+      return; 
+    } 
     // Validar teléfono 
     var phoneRegex = /^\d{10}$/; 
     if (!phoneRegex.test(phoneNumber)) { 
         alert('El número de teléfono no es válido'); 
         return; } 
         // Si todas las validaciones pasan, se puede enviar el formulario 
+        var usuario = {
+          nombreCompleto: fullName,
+          telefono: phoneNumber,
+          email: email,
+          contraseña: password
+      };
+
+      
+      var usuarioJSON = localStorage.setItem("prueba2",JSON.stringify(usuario));
+      var prueba = localStorage.getItem("prueba2");
         alert('Formulario enviado correctamente'); });
 
   //Mostrar y esconder sección de formulario
 
   function myFunction1() {
     var x = document.getElementById("formularioRegistro");
-    if (x.style.display === "none") {
+    if (x.style.display === "" || x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
