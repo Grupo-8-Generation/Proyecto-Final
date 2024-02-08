@@ -24,9 +24,10 @@ var inicioSesion = {
   email: email-1,
   contraseña: password-1
 };
-var usuarioJSON = localStorage.setItem("prueba2",JSON.stringify(usuario));
-      var prueba = localStorage.getItem("prueba2");
-        alert('Formulario enviado correctamente');
+var usuarioJSON = localStorage.setItem("prueba2", JSON.stringify(usuario));
+var prueba = localStorage.getItem("prueba2");
+alert('Formulario enviado correctamente');
+
 
   //Mostrar y esconder sección de formulario de iniciar sesión 
 
