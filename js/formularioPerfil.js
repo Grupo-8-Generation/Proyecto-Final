@@ -84,6 +84,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
           telefono: phoneNumber,
           email: email,
           contraseña: password
+          
       };
 
       
