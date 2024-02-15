@@ -20,6 +20,14 @@ function validateForm() {
   alert('Inicio de sesión exitoso');
   return true;
 }
+var inicioSesion = {
+  email: email-1,
+  contraseña: password-1
+};
+var usuarioJSON = localStorage.setItem("prueba2", JSON.stringify(usuario));
+var prueba = localStorage.getItem("prueba2");
+alert('Formulario enviado correctamente');
+
 
 var inicioSesion = {
   email: email-1,
