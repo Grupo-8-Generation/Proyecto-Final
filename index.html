@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> 
 
 <head>
     <meta charset="utf-8">
@@ -98,10 +98,11 @@
                             <a href="contacto.html" class="nav-item nav-link">Contacto</a>
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                            <button
-                                class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square"
-                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                                    class="fas fa-search"></i></button>
+                            <nav class="navbar navbar-light navbar-expand-xl">
+                                <a href="compras.html" class="navbar-brand">
+                                    <img src="img/carrito.jpeg" id="carro" alt="Logo Coffee Wehyah" width="50" height="auto">
+                                </a>
+                            </nav>
                             <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
                         </div>
                     </div>
@@ -266,7 +267,7 @@
     <div class="container-fluid services py-5">
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 800px;">
-                <p class="fs-4 text-uppercase text-center text-primary">Nuestros Productos RUDYYYYYYYY</p>
+                
                 <h1 class="display-3">Tienda</h1>
             </div>
             <div class="row g-4">
@@ -435,7 +436,7 @@
                 </div>
                 <div class="col-12">
                     <div class="services-btn text-center">
-                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Ver Más...</a>
+                        <a href="productos.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Ver Más...</a>
                     </div>
                 </div>
             </div>
@@ -501,190 +502,7 @@
             </div>
         </div>
     </div>
-    <!-- Video (?) -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Sobre Nosotros Fin -->
-
-
-    <!-- Counter Start -->
-    <div class="container-fluid counter-section">
-        <div class="container py-5">
-            <div class="row g-5 justify-content-center">
-                <div class="col-md-6 col-lg-4 col-xl-4">
-                    <div class="counter-item p-5">
-                        <div class="counter-content bg-grey p-4">
-                            <i class="fas fa-globe fa-5x text-primary mb-3"></i>
-                            <h5 class="text-primary">Conexiones con Productores Locales</h5>
-                            <div class="svg-img">
-                                <svg width="100" height="50">
-                                    <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="counter-quantity">
-                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">179</span>
-                            <span class="h1 fw-bold text-white">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-4">
-                    <div class="counter-item p-5">
-                        <div class="counter-content bg-grey p-4">
-                            <i class="fas fa-coffee fa-5x text-primary mb-3"></i>
-                            <h5 class="text-primary">Tazas de Café Compartidas</h5>
-                            <div class="svg-img">
-                                <svg width="100" height="50">
-                                    <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="counter-quantity">
-                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">429</span>
-                            <span class="h1 fw-bold text-white">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-4">
-                    <div class="counter-item p-5">
-                        <div class="counter-content bg-grey p-4">
-                            <i class="fas fa-users fa-5x text-primary mb-3"></i>
-                            <h5 class="text-primary">Clientes Felices</h5>
-                            <div class="svg-img">
-                                <svg width="100" height="50">
-                                    <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="counter-quantity">
-                            <span class="text-white fs-2 fw-bold" data-toggle="counter-up">313</span>
-                            <span class="h1 fw-bold text-white">+</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Counter End -->
-    </div>
-    <!-- Appointment End -->
-
-
-
-
-
-
-    <!-- Blog(?) Inicio -->
-    <div class="container-fluid pricing py-5">
-        <div class="container py-5">
-            <div class="owl-carousel pricing-carousel">
-                <div class="pricing-item">
-                    <div class="rounded pricing-content">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">$</small>49<small class="text-muted"
-                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">$</small>99<small class="text-muted"
-                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">$</small>149<small class="text-muted"
-                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">$</small>199<small class="text-muted"
-                                    style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Most Plan</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog(?) Fin -->
+    
 
 
 
@@ -696,115 +514,104 @@
                 <p class="fs-4 text-uppercase text-primary">Reseñas</p>
                 <h1 class="display-4 mb-4 text-white">Lo que dicen nuestros clientes</h1>
             </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item rounded p-4">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="d-flex flex-column mx-auto">
-                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
-                                    <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="mb-2 text-primary">Diana Gómez</h4>
-                                    <p class="m-0 text-white">Medellín</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="position-absolute" style="top: 20px; right: 25px;">
-                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="d-flex mb-4">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="fs-5 mb-0 text-white">Revolucionarón mi manera de disfrutar el café. La
-                                    sección de promociones siempre tiene sorpresas agradables, y la entrega es puntual.
-                                    Me encanta la idea de apoyar a pequeños productores locales mientras disfruto de mi
-                                    café favorito. ¡Altamente recomendado para todos los amantes del café!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item rounded p-4">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="d-flex flex-column mx-auto">
-                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
-                                    <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="">
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="mb-2 text-primary">Felipe Orjuela</h4>
-                                    <p class="m-0 text-white">Bogotá</p>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white); width: 100px; height: 100px; overflow: hidden; margin: 0 auto; margin-right: 25px;">
+                                        <img src="img/testimonial-1.jpg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Diana Gómez</h4>
+                                        <p class="m-0 text-white">Medellín</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="position-absolute" style="top: 20px; right: 25px;">
-                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="d-flex mb-4">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star"></i>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-white">Desde que descubrí Coffee Wehyah, no he vuelto a comprar
-                                    café en otro lugar. La página es fácil de usar, el proceso de compra es rápido y
-                                    seguro, y la calidad del café es insuperable. Además, siempre encuentro nuevos
-                                    lanzamientos y ofertas especiales. ¡Una experiencia de compra excepcional!
-                                </p>
+                                <div class="testimonial-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Revolucionarón mi manera de disfrutar el café. La sección de promociones siempre tiene sorpresas agradables, y la entrega es puntual. Me encanta la idea de apoyar a pequeños productores locales mientras disfruto de mi café favorito. ¡Altamente recomendado para todos los amantes del café!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-item rounded p-4">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="d-flex flex-column mx-auto">
-                                <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
-                                    <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white); width: 100px; height: 100px; overflow: hidden; margin: 0 auto; margin-right: 25px;">
+                                        <img src="img/testimonial-2.jpg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Felipe Orjuela</h4>
+                                        <p class="m-0 text-white">Bogotá</p>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <h4 class="mb-2 text-primary">Paula Ojeda</h4>
-                                    <p class="m-0 text-white">Bogotá</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Desde que descubrí Coffee Wehyah, no he vuelto a comprar café en otro lugar. La página es fácil de usar, el proceso de compra es rápido y seguro, y la calidad del café es insuperable. Además, siempre encuentro nuevos lanzamientos y ofertas especiales. ¡Una experiencia de compra excepcional!
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8">
-                            <div class="position-absolute" style="top: 20px; right: 25px;">
-                                <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="d-flex mb-4">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white); width: 100px; height: 100px; overflow: hidden; margin: 0 auto; margin-right: 25px;">
+                                        <img src="img/testimonial-3.jpg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Paula Ojeda</h4>
+                                        <p class="m-0 text-white">Bogotá</p>
+                                    </div>
                                 </div>
-                                <p class="fs-5 mb-0 text-white">La calidad del café es inigualable, y la variedad de
-                                    productos me permite explorar nuevos sabores. Además, me encanta saber que estoy
-                                    apoyando a pequeños productores. La entrega siempre es rápida y el servicio al
-                                    cliente excepcional. ¡Definitivamente mi tienda de café favorita!"
-                                </p>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">La calidad del café es sinigualable, y la variedad de productos me permite explorar nuevos sabores. Además, me encanta saber que estoy apoyando a pequeños productores. La entrega siempre es rápida y el servicio al cliente excepcional. <br>¡Definitivamente mi tienda de café favorita!"
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Reseña Fin -->
-
-
+        <!-- Reseña Fin -->
 
 
 
@@ -822,12 +629,12 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Nuestros servicios</h4>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Café en Grano</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Café Molido</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Café Orgánico</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Recetas</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Accesorios para café</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Productos elaborados con café</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café en Grano</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Molido</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Orgánico</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Recetas</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Accesorios para café</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Productos elaborados con café</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
