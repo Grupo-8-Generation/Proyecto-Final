@@ -97,6 +97,7 @@
     background: var(--bs-secondary) !important;
 }
 
+
 /*** Topbar End ***/
 
 /*** Navbar Start ***/
@@ -1791,3 +1792,100 @@ h3 {
 
 /*fin de diseño de copras*/
 
+/*simulación de pag de payu*/
+.pagos {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(250, 227, 240);
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .payment-methods {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 200px;
+  }
+  
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 50px;
+  }
+  
+  .methods-grid button {
+    padding: 10px;
+    background-color: #69d36e;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+ .payment-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fadfdf;
+    border-radius: 5px;
+  }
+  
+  .payment-form h3 {
+    margin-bottom: 10px;
+  }
+  
+  .payment-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #aa4949;
+    border-radius: 6px;
+  }
+  
+  .payment-form button {
+    padding: 10px 20px;
+    background-color: #80f371;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .payment-form button:hover {
+    background-color: #178329;
+  }
+
+  /*formato de recibo de pago*/
+  .receipt {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
