@@ -40,6 +40,8 @@
     });
 
 
+    
+
     // Pricing-carousel
     $(".pricing-carousel").owlCarousel({
         autoplay: true,
