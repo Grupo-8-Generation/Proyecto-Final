@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Wehyah</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Librería Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plantilla Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Inicio  -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid topbar d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="me-4 text-light"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Bogotá, Colombia</a>
+                            <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>(+57)
+                                317 305 9034 </a>
+                            <a href="#" class="text-light"><i
+                                    class="fas fa-envelope text-primary me-2"></i>coffeewehyah@gmail.com</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/Logoalargado.png" alt="Logo Coffee Wehyah" width="160" height="auto">
+                    </a>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="productos.html" class="nav-item nav-link">Productos</a>
+                            <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                            <div class="nav-item dropdown">
+                            <div class="nav-item dropdown"></div>
+                            </div>
+                            <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <nav class="navbar navbar-light navbar-expand-xl">
+                                <a href="compras.html" class="navbar-brand">
+                                    <img src="img/carritoUsuario.png" id="carro" alt="Logo Coffee Wehyah" width="60" height="auto">
+                                </a>
+                            </nav>
+                            <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Fin -->
+
+    <!--Inicio contenedor formularios-->
+    <div class="container-forms" >
+        <!--Inicio de formulario de inicio de sesión -->
+        <div class="container" id="myDIV">
+            <h2>Ingresar</h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control"  type="email" id="email-1" name="email" required>
+              </div>
+              <div class="form-group">
+                <label  for="password">Contraseña</label>
+                <input class="form-control" type="password" id="password-1" name="contrasena" required>
+              </div>
+               <div class="botones-login">
+                    <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
+                    <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
+                </div>
+            </form>
+        </div>
+
+        <!--Fin de formulario-->
+
+        <!--formulario de registro-->
+        <div class="container" id="formularioRegistro">
+            <h2>Registro de Usuario</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Nombre completo:</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Número de teléfono:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-2">Email:</label>
+                    <input type="email" class="form-control" id="email-2" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="password-2" required>
+                </div>
+                <div class="btn-registrarse">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        <!--Fin de formulario de registro-->
+    </div>
+    <!--Fin contenedor formularios-->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb py-5">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Blog</h1>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="row g-5">
+            <!-- Blog list Start -->
+            <div class="col-lg-8">
+                <div class="row g-5">
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Chemex.png" alt="Chemex">
+                            <a class="blog-overlay" href="articulochemex.html">
+                                <h4 class="text-white">El arte de preparar café: Descubre el método Chemex</h4>
+                                <span class="text-white fw-bold">Febrero 20, 2024</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Muffin.png" alt="Muffin de café">
+                            <a class="blog-overlay" href="articulomuffin.html">
+                                <h4 class="text-white">Deliciosos Muffins: Una tentadora receta de café y chocolate</h4>
+                                <span class="text-white fw-bold">Enero 18, 2024</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Cafeteros.png" alt="Cafeteros">
+                            <a class="blog-overlay" href="articulocafeteros.html">
+                                <h4 class="text-white">El legado de nuestros cafeteros: Tradición, innovación y sostenibilidad</h4>
+                                <span class="text-white fw-bold">Diciembre 12, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Tiramisu.png" alt="Postre Tiramisú">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">Delicia italiana: Tiramisú de café para disfrutar en casa</h4>
+                                <span class="text-white fw-bold">Noviembre 05, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Adi.png" alt="Adicción">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">Desentrañando el misterio: ¿Es el café realmente adictivo?</h4>
+                                <span class="text-white fw-bold">Octubre 29, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Historia.png" alt="Historia">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">Un viaje global: Explorando las tradiciones del café alrededor del mundo</h4>
+                                <span class="text-white fw-bold">Septiembre 22, 2023</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Expreso.png" alt="Expreso">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">Espresso en casa: ¿Cómo usar una máquina de espresso como un profesional?</h4>
+                                <span class="text-white fw-bold">Agosto 15, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Vs.png" alt="Vs">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">¿Goteo o Émbolo? Descubriendo la mejor manera de preparar café</h4>
+                                <span class="text-white fw-bold">Julio 01, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Frio.png" alt="Café Frío">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">Café Frío: Tu nueva bebida favorita </h4>
+                                <span class="text-white fw-bold">Junio 12, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-6">
+                        <div class="blog-item position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/Blog/Mitos.png" alt="Mitos">
+                            <a class="blog-overlay" href="">
+                                <h4 class="text-white">Mitos sobre el café: Desmitificando creencias comunes</h4>
+                                <span class="text-white fw-bold">Mayo 30, 2023</span>
+                            </a>
+                        </div>
+                    </div> -->
+                     <!-- Blog list End --!>
+
+                    <!--Page Navigation Start-->
+                    <div class="col-12">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center m-0">
+                                <li class="page-item">
+                                    <a class="page-link rounded-0" href="categoriaHistoria.html" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="categoriaHistoria.html">1</a></li>
+                                <!-- <li class="page-item"><a class="page-link" href="blog2.html">2</a></li> -->
+                                <li class="page-item">
+                                    <a class="page-link rounded-0" href="categoriaHistoria.html" aria-label="Next">
+                                        <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--Page Navigation End-->
+                </div>
+            </div>
+            <!-- Blog End -->
+
+            <!-- Sidebar Start -->
+            <div class="col-lg-4">
+                <!-- Search Form Start -->
+                <!-- <div class="mb-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-3" placeholder="Buscar">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div> -->
+                <!-- Search Form End -->
+
+                <!-- Category Start -->
+                <div class="mb-5">
+                    <h2 class="mb-4">Categorías</h2>
+                    <div class="d-flex flex-column justify-content-start bg-green p-4">
+                        <a class="fs-7 fw-bold text-white mb-2" href="categoriaRecetas.html"><i class="bi bi-arrow-right me-2"></i>Recetas</a>
+                        <a class="fs-7 fw-bold text-white mb-2" href="categoriaMetodos.html"><i class="bi bi-arrow-right me-2"></i>Métodos y Técnicas de Preparación</a>
+                        <a class="fs-7 fw-bold text-white mb-2" href="categoriaHistoria.html"><i class="bi bi-arrow-right me-2"></i>Historia del Café</a>
+                        <a class="fs-7 fw-bold text-white mb-2" href="categoriaCuriosidades.html"><i class="bi bi-arrow-right me-2"></i>Curiosidades y Mitos</a>
+                        <a class="fs-7 fw-bold text-white mb-2" href="categoriaMundo.html"><i class="bi bi-arrow-right me-2"></i>Café Alrededor del Mundo</a>
+                    </div>
+                </div>
+                    
+                <!-- Category End -->
+
+
+                <!-- Recent Post Start -->                
+                    <div class="mb-5">
+                        <h2 class="mb-4">Post Recientes</h2>
+                        <div class="bg-red p-4">
+                            <div class="post-item">
+                                <img class="img-fluid flex-shrink-0" src="img/Blog/Chemex.png" alt="Chemex">
+                                <a href="articulochemex.html">El arte de preparar café: Descubre el método Chemex</a>
+                            </div>
+                            <div class="post-item">
+                                <img class="img-fluid flex-shrink-0" src="img/Blog/Muffin.png" alt="Muffin de café">
+                                <a href="articulomuffin.html">Deliciosos Muffins: Una tentadora receta de café y chocolate</a>
+                            </div>
+                            <div class="post-item">
+                                <img class="img-fluid flex-shrink-0" src="img/Blog/Cafeteros.png" alt="Cafeteros">
+                                <a href="articulocafeteros.html">El legado de nuestros cafeteros: Tradición, innovación y sostenibilidad</a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Recent Post End -->
+
+
+                <!-- Tags Start -->
+                <div class="mb-5">
+                    <h2 class="mb-4">Etiquetas</h2>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-primary m-1">Café y Salud</a>
+                        <a href="" class="btn btn-primary m-1">Latte Art</a>
+                        <a href="" class="btn btn-primary m-1">Comercio Justo</a>
+                        <a href="" class="btn btn-primary m-1">Tostado de Café</a>
+                        <a href="" class="btn btn-primary m-1">Baristas</a>
+                        <a href="" class="btn btn-primary m-1">Arabica</a>
+                        <a href="" class="btn btn-primary m-1">Cappuccino</a>
+                        <a href="" class="btn btn-primary m-1">Cafeteros</a>
+                        <a href="" class="btn btn-primary m-1">Robusta</a>
+                        <a href="" class="btn btn-primary m-1">Frappuccino</a>
+                        <a href="" class="btn btn-primary m-1">Catas</a>
+                        <a href="" class="btn btn-primary m-1">Comunidad</a>
+                    </div>
+                </div>
+                <!-- Tags End -->
+
+                <!-- Quote Start -->    
+                    <div>
+                        <h2 class="mb-4">Frase del Mes</h2>
+                        <div class="bg-brown text-center text-white" style="padding: 30px;">
+                            <p>El cafe debe ser caliente como el infierno, negro como el diablo, puro como un angel y dulce como el amor. 
+                                <br> ~ Charles Maurice de Talleyrand
+                            </p>
+                        </div>
+                    </div>
+                    
+                <!-- Quote End -->
+           
+    </div>
+    <!-- Blog End -->
+
+    
+
+
+
+   <!-- Footer Inicio -->
+   <div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <h4 class="mb-4 text-white">Coffee Wehyah</h4>
+                    <p class="text-white">Despierta tus sentidos con nuestro café hecho con pasión.</p>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Nuestros servicios</h4>
+                    <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café en Grano</a>
+                    <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Molido</a>
+                    <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Orgánico</a>
+                    <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                    <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Accesorios para café</a>
+                    <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Productos elaborados con café</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Horario</h4>
+                    <p class="text-muted mb-0">Lunes a Viernes: <span class="text-white"> 9:00 am – 7:00 pm</span>
+                    </p>
+                    <p class="text-muted mb-0">Sábados: <span class="text-white"> 9:00 am – 06:00 pm</span></p>
+                    <p class="text-muted mb-0">Domingos: <span class="text-white"> 10:00 am – 05:00 pm</span></p>
+                    <h4 class="my-4 text-white">Dirección </h4>
+                    <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Bogotá, Colombia</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Síguenos</h4>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Facebook</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                    <h4 class="my-4 text-white"> Contáctanos</h4>
+                    <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> coffeewehyah@gmail.com</p>
+                    <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+57) 317 305 9034 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer Fin -->
+
+
+
+<!-- Copyright Inicio -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-md-0">
+                <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Coffe  Wehyah</a>, Todos los derechos reservados.</span>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center">
+                    <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center text-md-end text-white">
+                <p>Medios de pago</p>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                            class="fab fa-cc-visa"></i></a>
+                    <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                            class="fab fa-cc-mastercard"></i></a>
+                    <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                            class="fab fa-paypal"></i></a>
+                    <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
+                            class="fab fa-cc-amazon-pay"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Copyright Fin -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/efectoTexto.js"></script>
+    <script src="js/formularioPerfil.js"></script>
+</body>
+
+</html>

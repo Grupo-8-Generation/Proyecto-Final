@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Wehyah</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Librería Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plantilla Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Inicio  -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid topbar d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="me-4 text-light"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Bogotá, Colombia</a>
+                            <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>(+57)
+                                317 305 9034 </a>
+                            <a href="#" class="text-light"><i
+                                    class="fas fa-envelope text-primary me-2"></i>coffeewehyah@gmail.com</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/Logoalargado.png" alt="Logo Coffee Wehyah" width="160" height="auto">
+                    </a>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="productos.html" class="nav-item nav-link">Productos</a>
+                            <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                            <div class="nav-item dropdown">
+                            </div>
+                            <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <nav class="navbar navbar-light navbar-expand-xl">
+                                <a href="compras.html" class="navbar-brand">
+                                    <img src="img/carritoUsuario.png" id="carro" alt="Logo Coffee Wehyah" width="60" height="auto">
+                                </a>
+                            </nav>
+                            <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Fin -->
+
+    <!--Inicio contenedor formularios-->
+    <div class="container-forms" >
+        <!--Inicio de formulario de inicio de sesión -->
+        <div class="container" id="myDIV">
+            <h2>Ingresar</h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control"  type="email" id="email-1" name="email" required>
+              </div>
+              <div class="form-group">
+                <label  for="password">Contraseña</label>
+                <input class="form-control" type="password" id="password-1" name="contrasena" required>
+              </div>
+               <div class="botones-login">
+                    <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
+                    <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
+                </div>
+            </form>
+        </div>
+
+        <!--Fin de formulario-->
+
+        <!--formulario de registro-->
+        <div class="container" id="formularioRegistro">
+            <h2>Registro de Usuario</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Nombre completo:</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Número de teléfono:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-2">Email:</label>
+                    <input type="email" class="form-control" id="email-2" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="password-2" required>
+                </div>
+                <div class="btn-registrarse">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        <!--Fin de formulario de registro-->
+    </div>
+    <!--Fin contenedor formularios-->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb py-5">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Blog</h1>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Blog Start -->
+   
+    
+    <!-- Blog Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- Blog Detail Start -->
+                <div class="mb-5 blog-content">
+                    <img class="img-fluid w-100 rounded mb-5" src="img/Articulos/Muffin2.png" alt="Chemex">
+                    <h1 class="text-center mb-4 fw-bold">Deliciosos Muffins: Una tentadora receta de café y chocolate</h1>
+                    <p class="text-align: left fw-bold">Enero 18, 2024</p>
+                    <br>
+                    <article>
+                        <p>En el mundo de la repostería, pocas combinaciones son tan irresistibles como la del café y el chocolate. La mezcla de los sabores robustos del café con la riqueza y dulzura del chocolate crea una armonía perfecta que deleita a los paladares más exigentes. ¿Qué mejor manera de disfrutar de esta combinación que en forma de suaves y esponjosos muffins?</p>
+
+<p>La receta de muffins de café y chocolate es una opción ideal para sorprender a tus seres queridos en cualquier momento del día. Ya sea como un delicioso desayuno acompañado de una taza de café caliente o como un capricho indulgente para la merienda, estos muffins no decepcionarán.</p>
+
+<h2>Ingredientes:</h2>
+<ul>
+  <li>1 taza de harina de trigo</li>
+  <li>1/2 taza de azúcar</li>
+  <li>1/4 taza de cacao en polvo</li>
+  <li>2 cucharaditas de polvo de hornear</li>
+  <li>1/2 cucharadita de bicarbonato de sodio</li>
+  <li>Una pizca de sal</li>
+  <li>1/2 taza de café fuerte, enfriado</li>
+  <li>1/4 taza de leche</li>
+  <li>1 huevo</li>
+  <li>1/4 taza de aceite vegetal</li>
+  <li>1 cucharadita de extracto de vainilla</li>
+  <li>1/2 taza de chips de chocolate semidulce</li>
+</ul>
+
+<h2>Instrucciones:</h2>
+<ol>
+  <li>Precalienta el horno a 180°C (350°F) y prepara un molde para muffins con capacillos de papel o engrasándolo ligeramente.</li>
+  <li>En un tazón grande, combina la harina, el azúcar, el cacao en polvo, el polvo de hornear, el bicarbonato de sodio y la sal. Mezcla bien estos ingredientes secos.</li>
+  <li>En otro tazón, bate el café enfriado, la leche, el huevo, el aceite vegetal y el extracto de vainilla hasta que estén bien incorporados.</li>
+  <li>Vierte la mezcla líquida sobre los ingredientes secos y mezcla todo hasta que esté apenas combinado. No mezcles en exceso para evitar que los muffins queden duros.</li>
+  <li>Agrega los chips de chocolate semidulce a la mezcla y revuelve suavemente.</li>
+  <li>Distribuye la masa uniformemente en los moldes para muffins, llenándolos aproximadamente hasta 3/4 de su capacidad.</li>
+  <li>Hornea en el horno precalentado durante unos 18-20 minutos, o hasta que al insertar un palillo en el centro de un muffin, éste salga limpio.</li>
+  <li>Una vez horneados, retira los muffins del horno y déjalos enfriar en el molde durante unos minutos antes de transferirlos a una rejilla para que se enfríen completamente.</li>
+</ol>
+<p>¡Y listo! Ahora puedes disfrutar de estos deliciosos muffins de café y chocolate en compañía de tus seres queridos o como un dulce capricho para consentirte a ti mismo. ¡Buen provecho!</p>
+                    </article>
+                </div>
+                <!-- Blog Detail End -->
+
+
+                <!-- Comment List Start -->
+                <div class="mb-5">
+                    <h3 class="mb-4">2 Comentarios</h3>
+                    <div class="d-flex mb-4">
+                        <img src="img/UserBlog/user1.png" class="img-fluid" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6><a href="">John Jimenez</a> <small><i>01 Marzo 2024</i></small></h6>
+                            <p>¡Gracias por compartir esta deliciosa receta!</p>
+                            <button class="btn btn-sm btn-light">Responder:</button>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <img src="img/UserBlog/user2.png" class="img-fluid" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6><a href="">Diana Perez</a> <small><i>02 Febrero 2024</i></small></h6>
+                            <p>Justo tengo todos los ingredientes para esta receta, regresare y les comentare si es tan rica como se lee.</p>
+                            <button class="btn btn-sm btn-light">Responder:</button>
+                        </div>
+                    </div>
+                    <!-- <div class="d-flex ms-5 mb-4">
+                        <img src="img/UserBlog/user3.png" class="img-fluid" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6><a href="">Laura Garcia</a> <small><i>01 Jan 2045</i></small></h6>
+                            <p>Me encanta la combinación de ciencia y arte en este proceso de preparación. Definitivamente compartiré este artículo con mis amigos cafeteros.</p>
+                            <button class="btn btn-sm btn-light">Responder:</button>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- Comment List End -->
+
+                <!-- Comment Form Start -->
+                <div class="bg-light p-5 mb-5">
+                    <h3 class="mb-4">Tu perspectiva es importante <br> ¡Déjanos un comentario!</h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-white border-0" placeholder="Tu nombre" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control bg-white border-0" placeholder="Tu email" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control bg-white border-0" rows="5" placeholder="Tu comentario"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Deja tu comentario</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Comment Form End -->
+            </div>
+
+            <!-- Sidebar Start -->
+            <div class="col-lg-4">
+                <!-- Search Form Start -->
+                <div class="mb-5">
+                    <!-- <div class="input-group">
+                        <input type="text" class="form-control p-3" placeholder="Buscar">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div> -->
+                </div>
+                <!-- Search Form End -->
+
+
+
+               <!-- Category Start -->   
+               <div class="mb-5">
+                <h2 class="mb-4">Categorías</h2>
+                <div class="d-flex flex-column justify-content-start bg-green p-4">
+                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaRecetas.html"><i class="bi bi-arrow-right me-2"></i>Recetas</a>
+                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaMetodos.html"><i class="bi bi-arrow-right me-2"></i>Métodos y Técnicas de Preparación</a>
+                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaHistoria.html"><i class="bi bi-arrow-right me-2"></i>Historia del Café</a>
+                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaCuriosidades.html"><i class="bi bi-arrow-right me-2"></i>Curiosidades y Mitos</a>
+                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaMundo.html"><i class="bi bi-arrow-right me-2"></i>Café Alrededor del Mundo</a>
+                </div>
+            </div>
+            
+        <!-- Category End -->
+
+
+
+                <!-- Recent Post Start -->                
+                <div class="mb-5">
+                    <h2 class="mb-4">Post Recientes</h2>
+                    <div class="bg-red p-4">
+                        <div class="post-item">
+                            <img class="img-fluid flex-shrink-0" src="img/Blog/Chemex.png" alt="Chemex">
+                            <a href="articulochemex.html">El arte de preparar café: Descubre el método Chemex</a>
+                        </div>
+                        <div class="post-item">
+                            <img class="img-fluid flex-shrink-0" src="img/Blog/Muffin.png" alt="Muffin de café">
+                            <a href="articulomuffin.html">Deliciosos Muffins: Una tentadora receta de café y chocolate</a>
+                        </div>
+                        <div class="post-item">
+                            <img class="img-fluid flex-shrink-0" src="img/Blog/Cafeteros.png" alt="Cafeteros">
+                            <a href="articulocafeteros.html">El legado de nuestros cafeteros: Tradición, innovación y sostenibilidad</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- Recent Post End -->
+                
+
+
+                 <!-- Tags Start -->
+                 <div class="mb-5">
+                    <h2 class="mb-4">Etiquetas</h2>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-primary m-1">Café y Salud</a>
+                        <a href="" class="btn btn-primary m-1">Latte Art</a>
+                        <a href="" class="btn btn-primary m-1">Comercio Justo</a>
+                        <a href="" class="btn btn-primary m-1">Tostado de Café</a>
+                        <a href="" class="btn btn-primary m-1">Baristas</a>
+                        <a href="" class="btn btn-primary m-1">Arabica</a>
+                        <a href="" class="btn btn-primary m-1">Cappuccino</a>
+                        <a href="" class="btn btn-primary m-1">Cafeteros</a>
+                        <a href="" class="btn btn-primary m-1">Robusta</a>
+                        <a href="" class="btn btn-primary m-1">Frappuccino</a>
+                        <a href="" class="btn btn-primary m-1">Catas</a>
+                        <a href="" class="btn btn-primary m-1">Comunidad</a>
+                    </div>
+                </div>
+                <!-- Tags End -->
+
+                <!-- Quote Start -->    
+                <div>
+                    <h2 class="mb-4">Frase del Mes</h2>
+                    <div class="bg-brown text-center text-white" style="padding: 30px;">
+                        <p>El cafe debe ser caliente como el infierno, negro como el diablo, puro como un angel y dulce como el amor. 
+                            <br> ~ Charles Maurice de Talleyrand
+                        </p>
+                    </div>
+                </div>
+                
+            <!-- Quote End -->
+
+
+            </div>
+            <!-- Sidebar End -->
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    
+                               
+         
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4 text-white">Coffee Wehyah</h4>
+                        <p class="text-white">Despierta tus sentidos con nuestro café hecho con pasión.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Nuestros servicios</h4>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café en Grano</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Molido</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Orgánico</a>
+                        <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Accesorios para café</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Productos elaborados con café</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white"> Horario</h4>
+                        <p class="text-muted mb-0">Lunes a Viernes: <span class="text-white"> 9:00 am – 7:00 pm</span>
+                        </p>
+                        <p class="text-muted mb-0">Sábados: <span class="text-white"> 9:00 am – 06:00 pm</span></p>
+                        <p class="text-muted mb-0">Domingos: <span class="text-white"> 10:00 am – 05:00 pm</span></p>
+                        <h4 class="my-4 text-white">Dirección </h4>
+                        <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Bogotá, Distrito
+                            Capital</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Síguenos:</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                        <h4 class="my-4 text-white"> Contáctanos</h4>
+                        <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> coffeewehyah@gmail.com</p>
+                        <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+57) 317 305 9034 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Coffe
+                            Wehyah</a>, Todos los derechos reservados.</span>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end text-white">
+                    <p>Medios de pago</p>
+                    <div class="d-flex justify-content-end">
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-cc-visa"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-cc-mastercard"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-paypal"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-cc-amazon-pay"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/efectoTexto.js"></script>
+    <script src="js/formularioPerfil.js"></script>
+</body>
+
+</html>

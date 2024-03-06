@@ -527,9 +527,128 @@
 /*** Events End ***/
 
 
-/*** Pricing Start ***/
+
+
+/***Blog Start***/
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+.blog-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(52, 173, 84, 0), rgba(186, 143, 68, 1));
+    z-index: 1;   
+}
+
+.custom-pagination .page-link {
+    color: rgba(186, 143, 68, 1);
+}
+
+.custom-pagination .page-item.active .page-link {
+    background-color: rgba(186, 143, 68, 1) !important;
+    border-color: rgba(186, 143, 68, 1) !important;
+    border-color: rgba (186, 143, 68, 1);
+}
+
+/***Blog End***/
+
+/***Article Start***/
+.blog-content {
+    margin-top: 70px;
+}
+.input-group {
+    margin-top: 70px;
+}
+/***Article End***/
+
+/***Page Navigation Start***/
+
+.page-link {
+    color: rgba(92, 85, 57, 0.5);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.page-item.active .page-link {
+    background-color: #c0ad81 !important;
+    box-shadow: none;
+    color: #ffffff;
+    border-color: rgb(149, 142, 122) !important;
+
+}
+
+/***Page Navigation End**/
+
+
+                    
+
+
+/***Category Start***/
+.bg-green {
+    background-color:rgba(186, 143, 68, 1) !important;
+}
+                 
+/***Category End***/
+
+
+/***Recent Post Start***/
+.bg-red {
+    background-color: rgba(186, 143, 68, 1) !important;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-item img {
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.post-item a {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/***Recent Post End***/  
+
+
+
+/**Quote Start**/
+.bg-brown {
+    background-color:rgba(186, 143, 68, 1) !important;
+}
+                   
+/**Quote End**/
+
+
+
+/*** Carrusel Usuario Start ***/
 .pricing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -540,7 +659,7 @@
 }
 
 .pricing .pricing-item .pricing-content {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(228, 234, 115, 0.4);
 }
 
 .pricing .owl-carousel.pricing-carousel {
@@ -553,7 +672,7 @@
     right: 0;
     display: flex;
     font-size: 40px;
-    color: var(--bs-white);
+    color: var(--bs-black);
 
 }
 
@@ -571,18 +690,23 @@
     color: var(--bs-primary);
 }
 
-/*** Pricing End ***/
+/*** Recipe End ***/
+
+/*Pasarela de Pago Inicio**/
+
 
 /*** Team Start ***/
 .team .team-item {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    
 }
 
 .team .team-item .team-text {
     background: #BA8F44;
 }
+
 
 .team .team-item .team-social {
     position: absolute;
@@ -710,9 +834,12 @@
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
+    margin-top: auto;
+    margin-bottom: auto
 }
 
 /*** copyright end ***/
+
 
 /**estilos para misión y valores**/
 #mision,
@@ -723,12 +850,159 @@
 
 /**fin estilos para misión y valores**/
 
-/**Estilos para visión**/
+
+
+/**Estilos para nuestro nombre y visión**/
+#nombre,
 #vision {
-    width: 550px;
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
 }
 
-/**Fin estilos para visión**/
+#nombreimg,
+#visionimg {
+    width: 35%; 
+    height: auto; 
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.text-content {
+    width: 60%; 
+}
+/**Fin Estilos para nuestro nombre**/
+
+/**estilos para misión y valores**/
+#mision,
+#valores {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35rem;
+}
+
+#misionimg,
+#valoresimg {
+    width: 80%; 
+    height: auto; 
+    margin-top: 3rem;
+    margin-right: 1rem; /* Cambia margin-left a margin-right */
+    margin-left: -30rem;
+    display: flex;
+    flex-direction: row-reverse; /* Cambia de row-reverse a row */
+    align-items: center;
+    border-radius: 30px;
+}
+
+.text-content {
+    width: 100%; 
+}
+
+/**Fin estilos para misión y valores**/
+
+/**Inicio Estilos Perfil Usuario*/
+
+
+/* Estilos para la sección de información del usuario e historial de pedidos */
+.user-info, .order-history {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-info h3, .order-history h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/**Fin Estilos Perfil Usuario**
+
+
+
+
+
+
+
+
+
+/***My Account CSS ***/
+
+/* .my-account {
+    position: relative;
+    padding: 60px 0;
+}
+
+.my-account .nav.nav-pills .nav-link {
+    padding: 15px 22px;
+    color: #3F69AA;
+    font-weight: 400;
+    background: rgba(63, 105, 170, .1);
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.my-account .nav.nav-pills .nav-link:hover,
+.my-account .nav.nav-pills .nav-link.active {
+    color: #ffffff;
+    background: #aa863f;
+}
+
+.my-account .tab-content {
+    padding: 30px;
+    background: rgba(63, 105, 170, .1);
+}
+
+.my-account .tab-content .table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.my-account .tab-content .table .thead-dark th {
+    text-align: center;
+    background: #3F69AA;
+    border-color: #3F69AA;
+    vertical-align: middle;
+}
+
+.my-account .tab-content .table td {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.my-account .tab-content button {
+    height: 35px;
+    padding: 2px 15px;
+    text-align: center;
+    color: #ffffff;
+    background: #3F69AA;
+    border: none;
+}
+
+.my-account .tab-content input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #666666;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 15px;
+} */
+
+/**Fin My Account CSS**
+
+
+
+
+
 
 /**Color de las letras del menú**/
 #link-color {
@@ -1796,7 +2070,7 @@ h3 {
 .pagos {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(250, 227, 240);
+    background-color: #fff;
   }
   h1 {
     margin-bottom: 30px;
@@ -1821,7 +2095,7 @@ h3 {
   
   .methods-grid button {
     padding: 10px;
-    background-color: #69d36e;
+    background-color: #949b94;
     cursor: pointer;
     border-radius: 8px;
   }
@@ -1829,7 +2103,7 @@ h3 {
  .payment-form {
     margin-top: 20px;
     padding: 20px;
-    background-color: #fadfdf;
+    background-color: #fff;
     border-radius: 5px;
   }
   
@@ -1847,13 +2121,13 @@ h3 {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid #aa4949;
+    border: 1px solid #0a0a0a;
     border-radius: 6px;
   }
   
   .payment-form button {
     padding: 10px 20px;
-    background-color: #80f371;
+    background-color: #dfb980;
     color: white;
     border: none;
     border-radius: 7px;
@@ -1861,8 +2135,9 @@ h3 {
   }
   
   .payment-form button:hover {
-    background-color: #178329;
+    background-color: #ddf5e1;
   }
+  
 
   /*formato de recibo de pago*/
   .receipt {
@@ -1884,8 +2159,15 @@ h3 {
   
   p {
     margin: 10px 0;
+    text-align: center;
   }
   
   strong {
     font-weight: bold;
+  }
+  #btn_perfil{
+    color: #fdfbfb;
+    background-color: #CCB48A;
+    border-color: #faf8f9;
+    
   }

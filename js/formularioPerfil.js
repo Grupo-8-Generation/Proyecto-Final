@@ -19,16 +19,13 @@ function validateForm() {
 
   // Si el correo y la contraseña son válidos, se puede proceder con el inicio de sesión
   // Aquí puedes agregar tu lógica para enviar los datos a un servidor o realizar otras acciones
-  //alert('Inicio de sesión exitoso');
-  Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Inicio de sesión exitoso",
-    showConfirmButton: false,
-    timer: 500
-  });
-  return true;
+  alert('Inicio de sesión exitoso');
+     return true;
 }
+
+
+
+
 var inicioSesion = {
   email: email-1,
   contraseña: password-1
