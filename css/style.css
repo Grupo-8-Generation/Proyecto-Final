@@ -568,10 +568,12 @@
 
 /***Article Start***/
 .blog-content {
+
     margin-top: 70px;
 }
 .input-group {
     margin-top: 70px;
+
 }
 /***Article End***/
 
@@ -646,7 +648,9 @@
 
 
 
+
 /*** Carrusel Usuario Start ***/
+
 .pricing {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
     background-position: center center;
@@ -692,7 +696,9 @@
 
 /*** Recipe End ***/
 
+
 /*Pasarela de Pago Inicio**/
+
 
 
 /*** Team Start ***/
