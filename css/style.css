@@ -527,7 +527,123 @@
 /*** Events End ***/
 
 
-/*** Pricing Start ***/
+
+
+/***Blog Start***/
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+.blog-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(52, 173, 84, 0), rgba(186, 143, 68, 1));
+    z-index: 1;   
+}
+
+.custom-pagination .page-link {
+    color: rgba(186, 143, 68, 1);
+}
+
+.custom-pagination .page-item.active .page-link {
+    background-color: rgba(186, 143, 68, 1) !important;
+    border-color: rgba(186, 143, 68, 1) !important;
+    border-color: rgba (186, 143, 68, 1);
+}
+
+/***Blog End***/
+
+/***Article Start***/
+.blog-content {
+    margin-top: 70px; /* Ajusta este valor según tus necesidades */
+}
+/***Article End***/
+
+/***Page Navigation Start***/
+
+.page-link {
+    color: rgba(92, 85, 57, 0.5);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.page-item.active .page-link {
+    background-color: #c0ad81 !important;
+    box-shadow: none;
+    color: #ffffff;
+    border-color: rgb(149, 142, 122) !important;
+
+}
+
+/***Page Navigation End**/
+
+
+                    
+
+
+/***Category Start***/
+.bg-green {
+    background-color:rgba(186, 143, 68, 1) !important;
+}
+                 
+/***Category End***/
+
+
+/***Recent Post Start***/
+.bg-red {
+    background-color: rgba(186, 143, 68, 1) !important;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-item img {
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.post-item a {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/***Recent Post End***/  
+
+
+
+/**Quote Start**/
+.bg-brown {
+    background-color:rgba(186, 143, 68, 1) !important;
+}
+                   
+/**Quote End**/
+
+
+
+/*** Recipe Start ***/
 .pricing {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
     background-position: center center;
@@ -553,7 +669,7 @@
     right: 0;
     display: flex;
     font-size: 40px;
-    color: var(--bs-white);
+    color: var(--bs-black);
 
 }
 
@@ -571,18 +687,20 @@
     color: var(--bs-primary);
 }
 
-/*** Pricing End ***/
+/*** Recipe End ***/
 
 /*** Team Start ***/
 .team .team-item {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    
 }
 
 .team .team-item .team-text {
     background: #BA8F44;
 }
+
 
 .team .team-item .team-social {
     position: absolute;

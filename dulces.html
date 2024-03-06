@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Wehyah</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Librería Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plantilla Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Inicio  -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid topbar d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="me-4 text-light"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Bogotá, Colombia</a>
+                            <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>(+57)
+                                317 305 9034 </a>
+                            <a href="#" class="text-light"><i
+                                    class="fas fa-envelope text-primary me-2"></i>coffeewehyah@gmail.com</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                            <a class="me-3 btn-square border rounded-circle nav-fill"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/Logoalargado.png" alt="Logo Coffee Wehyah" width="160" height="auto">
+                    </a>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="productos.html" class="nav-item nav-link">Productos</a>
+                            <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <div class="nav-item dropdown">
+                                <a href="blog.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="articulos.html" class="dropdown-item">Articulos</class=>
+                                    <a href="recetas.html" class="dropdown-item">Recetas</a>
+                                    <a href="dulces.html" class="dropdown-item">Dulces</a>
+                                </div>
+                            </div>
+                            <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <nav class="navbar navbar-light navbar-expand-xl">
+                                <a href="compras.html" class="navbar-brand">
+                                    <img src="img/carrito.jpeg" id="carro" alt="Logo Coffee Wehyah" width="50" height="auto">
+                                </a>
+                            </nav>
+                            <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Fin -->
+
+    <!--Inicio contenedor formularios-->
+    <div class="container-forms" >
+        <!--Inicio de formulario de inicio de sesión -->
+        <div class="container" id="myDIV">
+            <h2>Ingresar</h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control"  type="email" id="email-1" name="email" required>
+              </div>
+              <div class="form-group">
+                <label  for="password">Contraseña</label>
+                <input class="form-control" type="password" id="password-1" name="contrasena" required>
+              </div>
+               <div class="botones-login">
+                    <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
+                    <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
+                </div>
+            </form>
+        </div>
+
+        <!--Fin de formulario-->
+
+        <!--formulario de registro-->
+        <div class="container" id="formularioRegistro">
+            <h2>Registro de Usuario</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Nombre completo:</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Número de teléfono:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-2">Email:</label>
+                    <input type="email" class="form-control" id="email-2" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="password-2" required>
+                </div>
+                <div class="btn-registrarse">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        <!--Fin de formulario de registro-->
+    </div>
+    <!--Fin contenedor formularios-->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb py-5">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Acerca de nosotros</h1>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <!--Acerca de nosotros-->
+                <p class="mb-4 text-center">¡Bienvenido a Coffee Wehyah! Más que un e-commerce, somos un rincón acogedor
+                    para los amantes del café y un apoyo vital para pequeños emprendedores y caficultores.<br>
+
+                    No solo vendemos café, construimos historias. Cada grano de café cuenta una historia de esfuerzo,
+                    perseverancia y pasión. Nos esforzamos por brindarte una experiencia única, donde cada compra es una
+                    oportunidad para apoyar a comunidades locales y disfrutar de la excelencia del café artesanal.
+                    Nuestra dedicación va más allá de ofrecer productos de calidad; trabajamos incansablemente para
+                    cultivar una comunidad que comparte el amor por el café. Nos gustaría que te unieras a nosotros en
+                    este viaje, donde cada taza es una celebración de la diversidad de sabores y aromas que el mundo del
+                    café tiene para ofrecer.<br>
+                    Bienvenido a Coffee Wehyah, donde el café no es solo una bebida, sino una experiencia compartida.
+                    ¡Disfruta cada sorbo!
+                </p>
+
+                <!--Mision-->
+                <div id="mision">
+                    <h1 class="display-4 mb-4">Misión</h1>
+                    <p class="mb-4">En un campo tan reducido como la comercialización de café, nosotros queremos enfocar
+                        nuestra atención en personas que no tienen la capacidad económica para crear un sitio web, un
+                        aplicativo o puede que sea el caso, que desconozca el funcionamiento de las redes sociales. Allí
+                        es donde ayudaremos a que estas personas puedan vender sus productos por medio de nosotros,
+                        nuestra página e-commerce facilitará esta labor para microempresarios y microempresarias.
+                    </p>
+                </div>
+
+                <!--Visión-->
+                <div id="vision">
+                    <h1 class="display-4 mb-4">Visión</h1>
+                    <p class="mb-4">Ser una de las mejores páginas e-commerce centradas en la comercialización de café a
+                        nivel Colombia, en donde cada uno de nuestros clientes tenga la plena seguridad que sus
+                        productos se venderán y se entregarán en los destinos de los compradores, además queremos
+                        aportar nuestro granito de arena en el comercio de café premium.
+                    </p>
+                </div>
+
+                <!--Valores-->
+                <div id="valores">
+                    <h1 class="display-4 mb-4">Valores</h1>
+                    <p class="mb-4">Coffe Wehyah trabaja en un plan de responsabilidad por medio de distintas acciones,
+                        ya que nuestra prioridad es que los microempresarios, empresarios y consumidores tengan la
+                        seguridad de que sus productos y efectivo va a llegar a las partes involucradas sin ningún
+                        contratiempo o problema.
+                    </p>
+                </div>
+
+
+                <!--Equipo-->
+                <div class="container-fluid team py-5">
+                    <div class="container py-5">
+                        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                            <h1 class="display-4 mb-4">Nuestro equipo</h1>
+                        </div>
+                        <div class="row g-4 contenedor-team">
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="team-item" id="integrante-uno">
+                                    <div class="team-img rounded-top">
+                                        <img src="img/team-1.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                                    </div>
+                                    <div class="team-text rounded-bottom text-center p-4">
+                                        <h3 class="text-card">Rudy Vásquez</h3>
+                                        <p class="mb-0 text-card">Desarrolladora Full-Stack</p><br>
+                                        <p class="mb-0 texto-oculto" id="espacio-texto1">Cargo: Desarrolladora Back-End
+                                        </p>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="#"><i class="fab fa-github"></i></a>
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="https://www.linkedin.com/in/rudy-v%C3%A1squez-developer-junior/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="team-item" id="integrante-dos">
+                                    <div class="team-img rounded-top">
+                                        <img src="img/team-2.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                                    </div>
+                                    <div class="team-text rounded-bottom text-center py-4">
+                                        <h3 class="text-card">Juliana Coronell</h3>
+                                        <p class="mb-0 text-card ">Desarrolladora Full-Stack</p><br>
+                                        <p class="mb-0 texto-oculto" id="espacio-texto2">Cargo: Desarrolladora Front-End
+                                        </p>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="https://github.com/JuliBytes"><i class="fab fa-github"></i></a>
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="https://www.linkedin.com/in/juliana-coronell-340b162a4/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="team-item" id="integrante-tres">
+                                    <div class="team-img rounded-top">
+                                        <img src="img/team-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                                    </div>
+                                    <div class="team-text rounded-bottom text-center p-4">
+                                        <h3 class="text-card">Paula Medina</h3>
+                                        <p class="mb-0 text-card ">Desarrolladora Full-Stack</p><br>
+                                        <p class="mb-0 texto-oculto" id="espacio-texto3">Cargo: Product Owner</p>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="https://github.com/psmedinadi22"><i class="fab fa-github"></i></a>
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="https://www.linkedin.com/in/paula--medina/"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="team-item" id="integrante-cuatro">
+                                    <div class="team-img rounded-top">
+                                        <img src="img/team-4.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                                    </div>
+                                    <div class="team-text rounded-bottom text-center p-4">
+                                        <h3 class="mb-0 text-card">Julián Vargas</h3>
+                                        <p class="mb-0 text-card">Desarrollador Full-Stack</p><br>
+                                        <!-- id="espacio-texto2" -->
+                                        <p class="mb-0 texto-oculto" id="espacio-texto4">Cargo: QA</p>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="https://github.com/julianricardo423"><i class="fab fa-github"></i></a>
+                                        <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2"
+                                            href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- Modal Video -->
+        <!-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> -->
+        <!-- 16:9 aspect ratio -->
+        <!-- <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                        allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    </div>
+    <!-- About End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4 text-white">Coffee Wehyah</h4>
+                        <p class="text-white">Despierta tus sentidos con nuestro café hecho con pasión.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Nuestros servicios</h4>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café en Grano</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Molido</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Café Orgánico</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Recetas</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Accesorios para café</a>
+                        <a href="compras.html"><i class="fas fa-angle-right me-2"></i> Productos elaborados con café</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white"> Horario</h4>
+                        <p class="text-muted mb-0">Lunes a Viernes: <span class="text-white"> 9:00 am – 7:00 pm</span>
+                        </p>
+                        <p class="text-muted mb-0">sabados: <span class="text-white"> 9:00 am – 06:00 pm</span></p>
+                        <p class="text-muted mb-0">Domingos: <span class="text-white"> 10:00 am – 05:00 pm</span></p>
+                        <h4 class="my-4 text-white">Dirección </h4>
+                        <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Bogotá, Distrito
+                            Capital</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Síguenos:</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                        <h4 class="my-4 text-white"> Contáctanos</h4>
+                        <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> coffeewehyah@gmail.com</p>
+                        <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> +57 310 0000000 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Coffe
+                            Wehyah</a>, Todos los derechos reservados.</span>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end text-white">
+                    <p>Medios de pago</p>
+                    <div class="d-flex justify-content-end">
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-cc-visa"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-cc-mastercard"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                class="fab fa-paypal"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-cc-amazon-pay"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/efectoTexto.js"></script>
+    <script src="js/formularioPerfil.js"></script>
+</body>
+
+</html>
