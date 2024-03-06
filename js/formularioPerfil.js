@@ -4,7 +4,8 @@ function validateForm() {
 
   // Validar el correo electrónico
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
+  if (!emailRegex.test(email)) 
+  {
     alert('Por favor, introduce un correo electrónico válido');
     return false;
   }
@@ -14,6 +15,7 @@ function validateForm() {
     alert('La contraseña debe tener al menos 6 caracteres');
     return false;
   }
+  
 
   // Si el correo y la contraseña son válidos, se puede proceder con el inicio de sesión
   // Aquí puedes agregar tu lógica para enviar los datos a un servidor o realizar otras acciones
@@ -90,11 +92,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
           contraseña: password
           
       };
-
-      
       var usuarioJSON = localStorage.setItem("prueba2",JSON.stringify(usuario));
       var prueba = localStorage.getItem("prueba2");
-        alert('Formulario enviado correctamente'); });
+        alert('Formulario enviado correctamente'); 
+      });
 
   //Mostrar y esconder sección de formulario
 

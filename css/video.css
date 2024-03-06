@@ -1,0 +1,29 @@
+.video {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  video {
+    width: 60%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para los controles del video */
+  video::-webkit-media-controls-play-button {
+    color: #fff;
+  }
+  
+  video::-webkit-media-controls-timeline {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  video::-webkit-media-controls-volume-slider {
+    background-color: rgba(255, 255, 255, 0.5);
+  }

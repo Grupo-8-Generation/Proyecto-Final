@@ -43,7 +43,11 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por la compra");
+    alert("Te direccionaremos a la página de pagos");
+     // Redireccionar a otra página después de 1 segundos
+  setTimeout(() => {
+    window.location.href = 'pagos.html';
+  }, 1000);
     //Elimino todos los elmentos del carrito
     let carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
@@ -195,3 +199,4 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
+
