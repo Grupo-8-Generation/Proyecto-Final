@@ -1914,7 +1914,7 @@ h3 {
 .pagos {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(250, 227, 240);
+    background-color: #fff;
   }
   h1 {
     margin-bottom: 30px;
@@ -1939,7 +1939,7 @@ h3 {
   
   .methods-grid button {
     padding: 10px;
-    background-color: #69d36e;
+    background-color: #949b94;
     cursor: pointer;
     border-radius: 8px;
   }
@@ -1947,7 +1947,7 @@ h3 {
  .payment-form {
     margin-top: 20px;
     padding: 20px;
-    background-color: #fadfdf;
+    background-color: #fff;
     border-radius: 5px;
   }
   
@@ -1965,13 +1965,13 @@ h3 {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid #aa4949;
+    border: 1px solid #0a0a0a;
     border-radius: 6px;
   }
   
   .payment-form button {
     padding: 10px 20px;
-    background-color: #80f371;
+    background-color: #dfb980;
     color: white;
     border: none;
     border-radius: 7px;
@@ -1979,8 +1979,9 @@ h3 {
   }
   
   .payment-form button:hover {
-    background-color: #178329;
+    background-color: #ddf5e1;
   }
+  
 
   /*formato de recibo de pago*/
   .receipt {
@@ -2002,8 +2003,15 @@ h3 {
   
   p {
     margin: 10px 0;
+    text-align: center;
   }
   
   strong {
     font-weight: bold;
+  }
+  #btn_perfil{
+    color: #fdfbfb;
+    background-color: #CCB48A;
+    border-color: #faf8f9;
+    
   }
