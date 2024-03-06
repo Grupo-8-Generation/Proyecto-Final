@@ -18,6 +18,9 @@
     <!-- Iconos Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
 
     <!-- Librería Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -89,15 +92,14 @@
                             <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                             <a href="blog.html" class="nav-item nav-link">Blog</a>
                             <div class="nav-item dropdown">
+                            <div class="nav-item dropdown"></div>
                             </div>
                             <a href="contacto.html" class="nav-item nav-link">Contacto</a>
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                             <nav class="navbar navbar-light navbar-expand-xl">
                                 <a href="compras.html" class="navbar-brand">
-
                                     <img src="img/carritoUsuario.png" id="carro" alt="Logo Coffee Wehyah" width="60" height="auto">
-
                                 </a>
                             </nav>
                             <button class="btn btn-primary" onclick="myFunction()"> Iniciar Sesión</button>
@@ -110,20 +112,20 @@
     <!-- Navbar Fin -->
 
     <!--Inicio contenedor formularios-->
-    <div class="container-forms" >
+    <div class="container-forms">
         <!--Inicio de formulario de inicio de sesión -->
         <div class="container" id="myDIV">
             <h2>Ingresar</h2>
             <form id="loginForm" onsubmit="return validateForm()">
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input class="form-control"  type="email" id="email-1" name="email" required>
-              </div>
-              <div class="form-group">
-                <label  for="password">Contraseña</label>
-                <input class="form-control" type="password" id="password-1" name="contrasena" required>
-              </div>
-               <div class="botones-login">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" type="email" id="email-1" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input class="form-control" type="password" id="password-1" name="contrasena" required>
+                </div>
+                <div class="botones-login">
                     <button type="submit" href="sesionPerfil.html" class="btn btn-primary">Iniciar Sesión</button>
                     <button class="btn btn-primary" onclick="myFunction1()">Registrarse</button>
                 </div>
@@ -164,212 +166,154 @@
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb py-5">
         <div class="container text-center py-5">
-            <h3 class="text-white display-3 mb-4">Blog</h1>
+            <h3 class="text-white display-3 mb-4">¡Bienvenido!</h1>
 
         </div>
     </div>
     <!-- Header End -->
 
 
-    <!-- Blog Start -->
-   
-    
-    <!-- Blog Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="row g-5">
-            <div class="col-lg-8">
-                <!-- Blog Detail Start -->
-                <div class="mb-5 blog-content">
-                    <img class="img-fluid w-100 rounded mb-5" src="img/Articulos/Chemex1.png" alt="Chemex">
-                    <h1 class="text-center mb-4 fw-bold">El arte de preparar café: Descubre el método Chemex</h1>
-                    <p class="text-align: left fw-bold">Febrero 20, 2024</p>
-                    <br>
-                    <article>
-                        <p>En el mundo del café, cada método de preparación es una obra maestra por derecho propio. Desde la meticulosa extracción de un espresso hasta el ritual relajante de la prensa francesa, cada método tiene su encanto y sus seguidores apasionados. Hoy, nos sumergiremos en el fascinante mundo del método Chemex, una técnica de preparación que combina la ciencia y el arte en una experiencia única de degustación.</p>
-                    
-                        <p>El método Chemex, inventado por el químico alemán Dr. Peter Schlumbohm en la década de 1940, es una combinación de simplicidad, elegancia y precisión. Su diseño icónico, una figura de reloj de arena hecha de vidrio, no solo es estéticamente hermoso, sino que también cumple una función crucial en el proceso de preparación del café.</p>
-                    
-                        <h2>Para comenzar, necesitarás los siguientes elementos:</h2>
-                        <ul>
-                            <li>Cafetera Chemex y filtros de papel Chemex.</li>
-                            <li>Café recién molido (preferiblemente de tueste medio).</li>
-                            <li>Agua caliente a la temperatura adecuada (aproximadamente entre 195°F y 205°F).</li>
-                            <li>Balanza de cocina y cronómetro.</li>
-                        </ul>
-                    
-                        <p>El proceso de preparación comienza con el enjuague del filtro de papel Chemex con agua caliente para eliminar cualquier sabor residual y calentar la jarra. Luego, agregamos cuidadosamente el café molido al filtro, creando una cama uniforme.</p>
-                    
-                        <p>El siguiente paso es la infusión. Comenzamos vertiendo una pequeña cantidad de agua caliente sobre el café molido, lo que se conoce como "bloom". Este paso permite que los gases atrapados en el café se liberen, preparando el terreno para una extracción uniforme y sabrosa.</p>
-                    
-                        <p>Una vez que el bloom ha terminado, continuamos vertiendo el agua en un movimiento circular, asegurándonos de cubrir todo el café de manera uniforme. La clave es mantener un ritmo constante y controlado, evitando el sobrepasar el borde de la Chemex.</p>
-                    
-                        <p>A medida que el agua atraviesa el café molido, el resultado es una taza de café excepcionalmente limpia y clara, resaltando las complejidades de los sabores y aromas presentes en los granos. El proceso completo suele tardar unos minutos, pero la espera vale la pena cuando se disfruta de la primera sorbo de esta deliciosa creación.</p>
-                    
-                        <p>En resumen, el método Chemex es mucho más que una forma de preparar café; es una experiencia sensorial que celebra la belleza y la precisión en cada taza. Ya sea que seas un entusiasta del café o un novato en el arte de la preparación, el método Chemex te invita a explorar un mundo de sabores refinados y momentos de tranquilidad en cada sorbo.</p>
-                    </article>
+
+     <!-- My Account Start -->
+     <div class="my-account">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="dashboard-nav" data-toggle="pill" href="#dashboard" role="tab">Página de Bienvenida</a>
+                        <a class="nav-link" id="orders-nav" data-toggle="pill" href="#orders-tab" role="tab">Ordenes</a>
+                        <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab">Métodos de Pago</a>
+                        <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab">Direcciones</a>
+                        <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab">Detalles de Cuenta</a>
+                        <a class="nav-link" href="index.html">Salir</a>
+                    </div>
                 </div>
-                <!-- Blog Detail End -->
-
-
-                <!-- Comment List Start -->
-                <div class="mb-5">
-
-                    <h3 class="mb-4">1 Comentarios</h3>
-                    <!-- <div class="d-flex mb-4">
-
-                        <img src="img/UserBlog/user1.png" class="img-fluid" style="width: 45px; height: 45px;">
-                        <div class="ps-3">
-                            <h6><a href="">John Jimenez</a> <small><i>01 Marzo 2024</i></small></h6>
-                            <p>¡Gracias por compartir esta guía tan detallada!</p>
-                            <button class="btn btn-sm btn-light">Responder:</button>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-nav">
+                            <h4>¡Bienvenida!</h4>
+                            <h1>Rudy Angélica Vásquez Vargas</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum quam ac mi viverra dictum. In efficitur ipsum diam, at dignissim lorem tempor in. Vivamus tempor hendrerit finibus. Nulla tristique viverra nisl, sit amet bibendum ante suscipit non. Praesent in faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien eget arcu rhoncus scelerisque.
+                            </p> 
                         </div>
-
-                    </div> -->
-                    <!-- <div class="d-flex mb-4">
-
-                        <img src="img/UserBlog/user2.png" class="img-fluid" style="width: 45px; height: 45px;">
-                        <div class="ps-3">
-                            <h6><a href="">Diana Perez</a> <small><i>25 Febrero 2024</i></small></h6>
-                            <p>Como barista aficionado, siempre estoy buscando nuevas formas de mejorar mi técnica de preparación de café. Este artículo sobre el método Chemex me ha dado una visión profunda y práctica sobre cómo lograr una taza perfecta. Definitivamente voy a probarlo en casa.</p>
-                            <button class="btn btn-sm btn-light">Responder:</button>
+                        <div class="tab-pane fade" id="orders-tab" role="tabpanel" aria-labelledby="orders-nav">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Product</th>
+                                            <th>Date</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Product Name</td>
+                                            <td>01 Jan 2020</td>
+                                            <td>$22</td>
+                                            <td>Approved</td>
+                                            <td><button>View</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Product Name</td>
+                                            <td>01 Jan 2020</td>
+                                            <td>$22</td>
+                                            <td>Approved</td>
+                                            <td><button>View</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Product Name</td>
+                                            <td>01 Jan 2020</td>
+                                            <td>$22</td>
+                                            <td>Approved</td>
+                                            <td><button>View</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-
-                    </div> -->
-
-                    <div class="d-flex ms-5 mb-4">
-                        <img src="img/UserBlog/user3.png" class="img-fluid" style="width: 45px; height: 45px;">
-                        <div class="ps-3">
-                            <h6><a href="">Laura Garcia</a> <small><i>01 Jan 2045</i></small></h6>
-                            <p>Me encanta la combinación de ciencia y arte en este proceso de preparación. Definitivamente compartiré este artículo con mis amigos cafeteros.</p>
-                            <button class="btn btn-sm btn-light">Responder:</button>
+                        <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
+                            <h4>Payment Method</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum quam ac mi viverra dictum. In efficitur ipsum diam, at dignissim lorem tempor in. Vivamus tempor hendrerit finibus. Nulla tristique viverra nisl, sit amet bibendum ante suscipit non. Praesent in faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien eget arcu rhoncus scelerisque.
+                            </p> 
+                        </div>
+                        <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
+                            <h4>Address</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Payment Address</h5>
+                                    <p>123 Payment Street, Los Angeles, CA</p>
+                                    <p>Mobile: 012-345-6789</p>
+                                    <button>Edit Address</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Shipping Address</h5>
+                                    <p>123 Shipping Street, Los Angeles, CA</p>
+                                    <p>Mobile: 012-345-6789</p>
+                                    <button>Edit Address</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-tab" role="tabpanel" aria-labelledby="account-nav">
+                            <h4>Account Details</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Mobile">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Address">
+                                </div>
+                                <div class="col-md-12">
+                                    <button>Update Account</button>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <h4>Password change</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="password" placeholder="Current Password">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="New Password">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Confirm Password">
+                                </div>
+                                <div class="col-md-12">
+                                    <button>Save Changes</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Comment List End -->
-
-                <!-- Comment Form Start -->
-                <div class="bg-light p-5 mb-5">
-                    <h3 class="mb-4">Tu perspectiva es importante <br> ¡Déjanos un comentario!</h3>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-white border-0" placeholder="Tu nombre" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-white border-0" placeholder="Tu email" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control bg-white border-0" rows="5" placeholder="Tu comentario"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Deja tu comentario</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                
-                <!-- Comment Form End -->
             </div>
-
-            <!-- Sidebar Start -->
-            <div class="col-lg-4 mt-90">
-                <!-- Search Form Start -->
-                <div class="mb-5">
-
-                    <!-- <div class="input-group">
-                        <input type="text" class="form-control p-3" placeholder="Buscar">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div> -->
-
-                </div>
-                <!-- Search Form End -->
-
-
-
-               <!-- Category Start -->   
-               <div class="mb-5">
-                <h2 class="mb-4">Categorías</h2>
-                <div class="d-flex flex-column justify-content-start bg-green p-4">
-
-                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaRecetas.html"><i class="bi bi-arrow-right me-2"></i>Recetas</a>
-                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaMetodos.html"><i class="bi bi-arrow-right me-2"></i>Métodos y Técnicas de Preparación</a>
-                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaHistoria.html"><i class="bi bi-arrow-right me-2"></i>Historia del Café</a>
-                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaCuriosidades.html"><i class="bi bi-arrow-right me-2"></i>Curiosidades y Mitos</a>
-                    <a class="fs-7 fw-bold text-white mb-2" href="categoriaMundo.html"><i class="bi bi-arrow-right me-2"></i>Café Alrededor del Mundo</a>
-
-                </div>
-            </div>
-            
-        <!-- Category End -->
-
-
-
-                <!-- Recent Post Start -->                
-                <div class="mb-5">
-                    <h2 class="mb-4">Post Recientes</h2>
-                    <div class="bg-red p-4">
-                        <div class="post-item">
-                            <img class="img-fluid flex-shrink-0" src="img/Blog/Chemex.png" alt="Chemex">
-
-                            <a href="articulochemex.html">El arte de preparar café: Descubre el método Chemex</a>
-                        </div>
-                        <div class="post-item">
-                            <img class="img-fluid flex-shrink-0" src="img/Blog/Muffin.png" alt="Muffin de café">
-                            <a href="articulomuffin.html">Deliciosos Muffins: Una tentadora receta de café y chocolate</a>
-                        </div>
-                        <div class="post-item">
-                            <img class="img-fluid flex-shrink-0" src="img/Blog/Cafeteros.png" alt="Cafeteros">
-                            <a href="articulocafeteros.html">El legado de nuestros cafeteros: Tradición, innovación y sostenibilidad</a>
-
-                        </div>
-                    </div>
-                </div>
-            <!-- Recent Post End -->
-                
-
-
-                 <!-- Tags Start -->
-                 <div class="mb-5">
-                    <h2 class="mb-4">Etiquetas</h2>
-                    <div class="d-flex flex-wrap m-n1">
-                        <a href="" class="btn btn-primary m-1">Café y Salud</a>
-                        <a href="" class="btn btn-primary m-1">Latte Art</a>
-                        <a href="" class="btn btn-primary m-1">Comercio Justo</a>
-                        <a href="" class="btn btn-primary m-1">Tostado de Café</a>
-                        <a href="" class="btn btn-primary m-1">Baristas</a>
-                        <a href="" class="btn btn-primary m-1">Arabica</a>
-                        <a href="" class="btn btn-primary m-1">Cappuccino</a>
-                        <a href="" class="btn btn-primary m-1">Cafeteros</a>
-                        <a href="" class="btn btn-primary m-1">Robusta</a>
-                        <a href="" class="btn btn-primary m-1">Frappuccino</a>
-                        <a href="" class="btn btn-primary m-1">Catas</a>
-                        <a href="" class="btn btn-primary m-1">Comunidad</a>
-                    </div>
-                </div>
-                <!-- Tags End -->
-
-                <!-- Quote Start -->    
-                <div>
-                    <h2 class="mb-4">Frase del Mes</h2>
-                    <div class="bg-brown text-center text-white" style="padding: 30px;">
-                        <p>El cafe debe ser caliente como el infierno, negro como el diablo, puro como un angel y dulce como el amor. 
-                            <br> ~ Charles Maurice de Talleyrand
-                        </p>
-                    </div>
-                </div>
-                
-            <!-- Quote End -->
-
-
-            </div>
-            <!-- Sidebar End -->
         </div>
     </div>
-    <!-- Blog End -->
+    <!-- My Account End -->
 
     
-                               
-         
+
+    
+
+
+
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5">

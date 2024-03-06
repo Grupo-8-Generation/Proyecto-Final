@@ -568,7 +568,12 @@
 
 /***Article Start***/
 .blog-content {
-    margin-top: 70px; /* Ajusta este valor según tus necesidades */
+
+    margin-top: 70px;
+}
+.input-group {
+    margin-top: 70px;
+
 }
 /***Article End***/
 
@@ -643,9 +648,11 @@
 
 
 
-/*** Recipe Start ***/
+
+/*** Carrusel Usuario Start ***/
+
 .pricing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -656,7 +663,7 @@
 }
 
 .pricing .pricing-item .pricing-content {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(228, 234, 115, 0.4);
 }
 
 .pricing .owl-carousel.pricing-carousel {
@@ -688,6 +695,11 @@
 }
 
 /*** Recipe End ***/
+
+
+/*Pasarela de Pago Inicio**/
+
+
 
 /*** Team Start ***/
 .team .team-item {
@@ -828,9 +840,12 @@
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
+    margin-top: auto;
+    margin-bottom: auto
 }
 
 /*** copyright end ***/
+
 
 /**estilos para misión y valores**/
 #mision,
@@ -841,12 +856,159 @@
 
 /**fin estilos para misión y valores**/
 
-/**Estilos para visión**/
+
+
+/**Estilos para nuestro nombre y visión**/
+#nombre,
 #vision {
-    width: 550px;
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
 }
 
-/**Fin estilos para visión**/
+#nombreimg,
+#visionimg {
+    width: 35%; 
+    height: auto; 
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.text-content {
+    width: 60%; 
+}
+/**Fin Estilos para nuestro nombre**/
+
+/**estilos para misión y valores**/
+#mision,
+#valores {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35rem;
+}
+
+#misionimg,
+#valoresimg {
+    width: 80%; 
+    height: auto; 
+    margin-top: 3rem;
+    margin-right: 1rem; /* Cambia margin-left a margin-right */
+    margin-left: -30rem;
+    display: flex;
+    flex-direction: row-reverse; /* Cambia de row-reverse a row */
+    align-items: center;
+    border-radius: 30px;
+}
+
+.text-content {
+    width: 100%; 
+}
+
+/**Fin estilos para misión y valores**/
+
+/**Inicio Estilos Perfil Usuario*/
+
+
+/* Estilos para la sección de información del usuario e historial de pedidos */
+.user-info, .order-history {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-info h3, .order-history h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/**Fin Estilos Perfil Usuario**
+
+
+
+
+
+
+
+
+
+/***My Account CSS ***/
+
+/* .my-account {
+    position: relative;
+    padding: 60px 0;
+}
+
+.my-account .nav.nav-pills .nav-link {
+    padding: 15px 22px;
+    color: #3F69AA;
+    font-weight: 400;
+    background: rgba(63, 105, 170, .1);
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.my-account .nav.nav-pills .nav-link:hover,
+.my-account .nav.nav-pills .nav-link.active {
+    color: #ffffff;
+    background: #aa863f;
+}
+
+.my-account .tab-content {
+    padding: 30px;
+    background: rgba(63, 105, 170, .1);
+}
+
+.my-account .tab-content .table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.my-account .tab-content .table .thead-dark th {
+    text-align: center;
+    background: #3F69AA;
+    border-color: #3F69AA;
+    vertical-align: middle;
+}
+
+.my-account .tab-content .table td {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.my-account .tab-content button {
+    height: 35px;
+    padding: 2px 15px;
+    text-align: center;
+    color: #ffffff;
+    background: #3F69AA;
+    border: none;
+}
+
+.my-account .tab-content input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #666666;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 15px;
+} */
+
+/**Fin My Account CSS**
+
+
+
+
+
 
 /**Color de las letras del menú**/
 #link-color {
