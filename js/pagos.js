@@ -27,7 +27,7 @@ function selectPaymentMethod(method) {
   
     // Aquí puedes agregar la lógica para procesar el pago con los datos ingresados
   
-    alert(`Se procesara su pago con la siguiente información:\nCorreo: ${email}\nNombres: ${names}\nApellidos: ${lastNames}\nCelular: ${phone}\n¡estas seguro`);
+    alert(`Se procesara su pago con la siguiente información:\nCorreo: ${email}\nNombres: ${names}\nApellidos: ${lastNames}\nCelular: ${phone}`);
     // Generar comprobante de pago
   const receipt = `Comprobante de pago:\nCorreo: ${email}\nNombres: ${names}\nApellidos: ${lastNames}\nCelular: ${phone}`;
 

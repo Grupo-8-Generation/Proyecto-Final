@@ -39,8 +39,12 @@ footer {
 }
 
 #user-info, #order-history {
-    display: inline-block;
-    width: 45%; /* Ajusta el ancho según tus necesidades */
+    display:inline-flex;
+    margin-left: 250px;
+    margin-right: px;
+    width: 25%; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 100px;
+    
 }
 
 #user-info {
@@ -72,4 +76,40 @@ footer {
 }
 
 
+ /* Para el ancho y alto de las imagenes. Modificalo a gusto =)  */
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     width: 25%;
+     height: 400px;
+     margin: auto;
+ }
+ /* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
+ .carousel-control {
+     width: 0.1%;
+ }
+ .botones{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+    
+ }
+
+ #produc_Btn{
+    border: #333;
+    background-color: #BA8F44;
+    margin-right: 100px;
+    font-size: 16px;
+    border-radius: 3%;
+    color: #fff;
+
+ }
+ #comp_Btn{
+    border: #333;
+    background-color: #BA8F44;
+    margin-right: 100px;
+    font-size: 16px;
+    border-radius: 3%;
+    color: #fff;
+ }
 
